@@ -2,15 +2,15 @@
 <rss version="2.0">
     <channel>
         <title>Alan</title>
-        <link>https://alanoss.gitee.io/so</link>
+        <link>https://Alanosy.github.io</link>
         <description></description>
         <language>zh-CN</language>
         <pubDate>Mon, 25 Jan 2021 13:58:22 +0800</pubDate>
         <lastBuildDate>Mon, 25 Jan 2021 13:58:22 +0800</lastBuildDate>
         <item>
-            <guid isPermalink="true">https://alanoss.gitee.io/so/2021/01/25/Linux%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</guid>
+            <guid isPermalink="true">https://alanosy.github.io/2021/01/25/Linux%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</guid>
             <title>Linux搭建博客</title>
-            <link>https://alanoss.gitee.io/so/2021/01/25/Linux%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</link>
+            <link>https://alanosy.github.io/2021/01/25/Linux%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</link>
             <pubDate>Mon, 25 Jan 2021 13:58:22 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;Hexo 简介&lt;br&gt;
  Hexo 是一款基于 Node.js 的静态博客框架，依赖少易于安装使用，可以方便的生成静态网页托管在 GitHub 和 Gitee 上，是搭建博客的首选框架。大家可以进入 hexo 官网进行详细查看，因为 Hexo 的创建者是台湾人，对中文的支持很友好，可以选择中文进行查看&lt;/p&gt;
@@ -104,9 +104,9 @@ Gitee 创建个人仓库&lt;br&gt;
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://alanoss.gitee.io/so/2021/01/25/hello-world/</guid>
+            <guid isPermalink="true">https://alanosy.github.io/2021/01/25/hello-world/</guid>
             <title>置顶文章</title>
-            <link>https://alanoss.gitee.io/so/2021/01/25/hello-world/</link>
+            <link>https://alanosy.github.io/2021/01/25/hello-world/</link>
             <pubDate>Mon, 25 Jan 2021 11:16:33 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;Welcome to &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvLw==&#34;&gt;Hexo&lt;/span&gt;! This is your very first post. Check &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mv&#34;&gt;documentation&lt;/span&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3MvdHJvdWJsZXNob290aW5nLmh0bWw=&#34;&gt;troubleshooting&lt;/span&gt; or you can ask me on &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvL2lzc3Vlcw==&#34;&gt;GitHub&lt;/span&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;quick-start&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#quick-start&#34;&gt;#&lt;/a&gt; Quick Start&lt;/h2&gt;
