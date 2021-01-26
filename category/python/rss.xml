@@ -1,0 +1,1218 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>Alan • Posts by &#34;python&#34; category</title>
+        <link>https://alanosy.github.io</link>
+        <description></description>
+        <language>zh-CN</language>
+        <pubDate>Tue, 26 Jan 2021 13:39:02 +0800</pubDate>
+        <lastBuildDate>Tue, 26 Jan 2021 13:39:02 +0800</lastBuildDate>
+        <item>
+            <guid isPermalink="true">https://alanosy.github.io/2021/01/26/computer-science/java/course-1/python-day-1/</guid>
+            <title>python_day_1</title>
+            <link>https://alanosy.github.io/2021/01/26/computer-science/java/course-1/python-day-1/</link>
+            <pubDate>Tue, 26 Jan 2021 13:39:02 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;简介&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#简介&#34;&gt;#&lt;/a&gt; 简介&lt;/h1&gt;
+&lt;p&gt;Python 是一种通用编程语言，其在科学计算和机器学习领域具有广泛的应用。如果我们打算利用 Python 来执行机器学习，那么对 Python 有一些基本的了解就是至关重要的。本 Python 入门系列体验就是为这样的初学者精心准备的。&lt;/p&gt;
+&lt;p&gt;本实验包括以下内容：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;变量、运算符与数据类型&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;注释&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;在 python 中，# 表示注释，作用于整行&lt;/p&gt;
+&lt;p&gt;例如：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bashs&#34;&gt;print(&amp;quot;Hello World&amp;quot;)
+#我的第一个程序
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;其中” 我的第一个程序 “在代码不起运行作用&lt;/p&gt;
+&lt;p&gt;另外还有多行注释用 ``` 来标注&lt;/p&gt;
+&lt;p&gt;例如&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;​```&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;这是一个多引号注释&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;用于注释多行&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;···&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;print&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;Hello china&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;运算符&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;算术运算符&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;code&gt;&amp;gt;&lt;/code&gt;&lt;/th&gt;
+&lt;th&gt;大于&lt;/th&gt;
+&lt;th&gt;&lt;code&gt;2 &amp;gt; 1&lt;/code&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;&amp;gt;=&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;大于等于&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;2 &amp;gt;= 4&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;&amp;lt;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;小于&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;1 &amp;lt; 2&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;&amp;lt;=&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;小于等于&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;5 &amp;lt;= 2&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;==&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;等于&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;3 == 4&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;!=&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;不等于&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;3 != 5&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;例子&lt;/p&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;span&gt;n&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;# 2&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;# 1&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;3&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;# 12&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;3&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;# 0.75&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;3&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;//&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;# 0&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;3&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;%&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;# 3&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;**&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;# 8&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;strong&gt;比较运算符&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;code&gt;and&lt;/code&gt;&lt;/th&gt;
+&lt;th&gt;与&lt;/th&gt;
+&lt;th&gt;&lt;code&gt;(3 &amp;gt; 2) and (3 &amp;lt; 5)&lt;/code&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;or&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;或&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;(1 &amp;gt; 3) or (9 &amp;lt; 2)&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;not&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;非&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;not (2 &amp;gt; 1)&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;例子&lt;/p&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;span&gt;n&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;# True&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;# False&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;# True&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;5&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;# False&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;3&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;# False&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;3&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;!=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;# True&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;strong&gt;逻辑运算符&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;code&gt;and&lt;/code&gt;&lt;/th&gt;
+&lt;th&gt;与&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;&lt;code&gt;(3 &amp;gt; 2) and (3 &amp;lt; 5)&lt;/code&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;or&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;或&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;code&gt;(1 &amp;gt; 3) or (9 &amp;lt; 2)&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;not&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;非&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;code&gt;not (2 &amp;gt; 1)&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;例子&lt;/p&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;span&gt;on&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;3&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;and&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;3&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;# True&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;or&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;9&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;# False&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;not&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;# False&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;strong&gt;位运算符&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;code&gt;~&lt;/code&gt;&lt;/th&gt;
+&lt;th&gt;按位取反&lt;/th&gt;
+&lt;th&gt;&lt;code&gt;~4&lt;/code&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;&amp;amp;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;按位与&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;4 &amp;amp; 5&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;   |&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;按位或&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;^&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;按位异或&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;4 ^ 5&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;&amp;lt;&amp;lt;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;左移&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;4 &amp;lt;&amp;lt; 2&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;&amp;gt;&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;右移&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;4 &amp;gt;&amp;gt; 2&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;例子&lt;/p&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;span&gt;n&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;bin&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;# 0b100&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;bin&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;# 0b101&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;bin&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;~&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;~&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;# -0b101 -5&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;bin&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;4&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;4&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;# 0b100 4&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;bin&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;4&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;4&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;# 0b101 5&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;bin&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;4&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;^&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;4&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;^&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;# 0b1 1&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;bin&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;4&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;4&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;# 0b10000 16&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;bin&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;4&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;4&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;# 0b1 1&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;strong&gt;三元运算符&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;例子&lt;/p&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;span&gt;n&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;x&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; y &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;5&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; x &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt; y&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    small &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; x&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;else&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    small &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; y&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;small&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;# 4&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;strong&gt;其他运算符&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;code&gt;in&lt;/code&gt;&lt;/th&gt;
+&lt;th&gt;存在&lt;/th&gt;
+&lt;th&gt;&lt;code&gt;&#39;A&#39; in [&#39;A&#39;, &#39;B&#39;, &#39;C&#39;]&lt;/code&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;not in&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;不存在&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;&#39;h&#39; not in [&#39;A&#39;, &#39;B&#39;, &#39;C&#39;]&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;is&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;是&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;&amp;quot;hello&amp;quot; is &amp;quot;hello&amp;quot;&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;not is&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;不是&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;&amp;quot;hello&amp;quot; is not &amp;quot;hello&amp;quot;&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;例子&lt;/p&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;span&gt;n&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;letters &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;A&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;B&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;C&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;A&#39;&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;in&lt;/span&gt; letters&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;A&#39;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39; exists&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;h&#39;&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;not&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;in&lt;/span&gt; letters&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;h&#39;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39; not exists&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# A exists&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# h not exists&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;span&gt;n&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;a &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;hello&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;b &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;hello&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;a &lt;span class=&#34;token keyword&#34;&gt;is&lt;/span&gt; b&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; a &lt;span class=&#34;token operator&#34;&gt;==&lt;/span&gt; b&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;# True True&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;a &lt;span class=&#34;token keyword&#34;&gt;is&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;not&lt;/span&gt; b&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; a &lt;span class=&#34;token operator&#34;&gt;!=&lt;/span&gt; b&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;# False False&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;span&gt;n&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;a &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;hello&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;b &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;hello&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;a &lt;span class=&#34;token keyword&#34;&gt;is&lt;/span&gt; b&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; a &lt;span class=&#34;token operator&#34;&gt;==&lt;/span&gt; b&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;# False True&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;a &lt;span class=&#34;token keyword&#34;&gt;is&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;not&lt;/span&gt; b&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; a &lt;span class=&#34;token operator&#34;&gt;!=&lt;/span&gt; b&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;# True False&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;注意：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;is, is not 对比的是两个变量的内存地址&lt;/li&gt;
+&lt;li&gt;==, != 对比的是两个变量的值&lt;/li&gt;
+&lt;li&gt;比较的两个变量，指向的都是地址不可变的类型（str 等），那么 is，is not 和 ==，！= 是完全等价的。&lt;/li&gt;
+&lt;li&gt;对比的两个变量，指向的是地址可变的类型（list，dict，tuple 等），则两者是有区别的。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;运算符的优先级&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;**&lt;/th&gt;
+&lt;th&gt;指数（最高优先级）&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;~±&lt;/td&gt;
+&lt;td&gt;按位翻转，一元加号和减号&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;* / % //&lt;/td&gt;
+&lt;td&gt;乘，除，取模和取整除）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;+ -&lt;/td&gt;
+&lt;td&gt;加法减法&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;gt;&amp;gt; &amp;lt;&amp;lt;&lt;/td&gt;
+&lt;td&gt;右移，左移运算符&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;amp;&lt;/td&gt;
+&lt;td&gt;位‘AND’&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;^|&lt;/td&gt;
+&lt;td&gt;位运算符&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;lt;=&amp;lt;&amp;gt;&amp;gt;=&lt;/td&gt;
+&lt;td&gt;比较运算符&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;lt;&amp;gt;==!=&lt;/td&gt;
+&lt;td&gt;等于运算符&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;=%=/=//=-=+=*=**=&lt;/td&gt;
+&lt;td&gt;赋值运算符&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;is is not&lt;/td&gt;
+&lt;td&gt;身份运算符&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;in not in&lt;/td&gt;
+&lt;td&gt;成员运算符&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;not and or&lt;/td&gt;
+&lt;td&gt;逻辑运算符&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;例子&lt;/p&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;span&gt;n&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;3&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;**&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;# -9&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;3&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;**&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;# 0.1111111111111111&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;3&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;7&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;# 0&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;3&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;5&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;# -12.5&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;3&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;4&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;and&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;4&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;# True&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;变量和赋值&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在使用变量之前，需要对其先赋值。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;变量名可以包括字母、数字、下划线、但变量名不能以数字开头。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Python 变量名是大小写敏感的，foo != Foo。&lt;/p&gt;
+&lt;p&gt;例子&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;first &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;second &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;3&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;third &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; first + second&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;print&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;third&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;# 5&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;strong&gt;数据类型与转换&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;int&lt;/th&gt;
+&lt;th&gt;整型  &lt;code&gt;&amp;lt;class &#39;int&#39;&amp;gt;&lt;/code&gt;&lt;/th&gt;
+&lt;th&gt;&lt;code&gt;-876, 10&lt;/code&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;float&lt;/td&gt;
+&lt;td&gt;浮点型 &lt;code&gt;&amp;lt;class &#39;float&#39;&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;3.149, 11.11&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;bool&lt;/td&gt;
+&lt;td&gt;布尔型 &lt;code&gt;&amp;lt;class &#39;bool&#39;&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;True, False&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;i &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; input&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;i=&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;print&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;i,type&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;))&lt;/span&gt;可以查看i的类型&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ul&gt;
+&lt;li&gt;获取类型信息  &lt;code&gt;type(object)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;type ()` 不会认为子类是一种父类类型，不考虑继承关系。&lt;/p&gt;
+&lt;p&gt;isinstance ()` 会认为子类是一种父类类型，考虑继承关系。&lt;/p&gt;
+&lt;p&gt;如果要判断两个类型是否相同推荐使用  &lt;code&gt;isinstance()&lt;/code&gt; 。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;类型转换&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;转换为整型  &lt;code&gt;int(x, base=10)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;转换为字符串  &lt;code&gt;str(object=&#39;&#39;)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;转换为浮点型  &lt;code&gt;float(x)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;print () 函数&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;print&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;*objects, &lt;span class=&#34;token assign-left variable&#34;&gt;sep&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39; &#39;&lt;/span&gt;, &lt;span class=&#34;token assign-left variable&#34;&gt;end&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;&lt;span class=&#34;token entity&#34; title=&#34;\n&#34;&gt;\n&lt;/span&gt;&#39;&lt;/span&gt;, &lt;span class=&#34;token assign-left variable&#34;&gt;file&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;sys.stdout, &lt;span class=&#34;token assign-left variable&#34;&gt;flush&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;False&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ul&gt;
+&lt;li&gt;将对象以字符串表示的方式格式化输出到流文件对象 file 里。其中所有非关键字参数都按 &lt;code&gt;str()&lt;/code&gt;  方式进行转换为字符串输出；&lt;/li&gt;
+&lt;li&gt;关键字参数 &lt;code&gt;sep&lt;/code&gt;  是实现分隔符，比如多个参数输出时想要输出中间的分隔字符；&lt;/li&gt;
+&lt;li&gt;关键字参数 &lt;code&gt;end&lt;/code&gt;  是输出结束时的字符，默认是换行符 &lt;code&gt;\n&lt;/code&gt; ；&lt;/li&gt;
+&lt;li&gt;关键字参数 &lt;code&gt;file&lt;/code&gt;  是定义流输出的文件，可以是标准的系统输出 &lt;code&gt;sys.stdout&lt;/code&gt; ，也可以重定义为别的文件；&lt;/li&gt;
+&lt;li&gt;关键字参数 &lt;code&gt;flush&lt;/code&gt;  是立即把内容输出到流文件，不作缓存。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;位运算&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;原码、反码和补码&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;二进制有三种不同的表示形式：原码、反码和补码，计算机内部使用补码来表示。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;原码&lt;/strong&gt;：就是其二进制表示（注意，有一位符号位）。&lt;/p&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token number&#34;&gt;00&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;00&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;00&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;11&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;3&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token number&#34;&gt;10&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;00&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;00&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;11&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;3&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;strong&gt;反码&lt;/strong&gt;：正数的反码就是原码，负数的反码是符号位不变，其余位取反（对应正数按位取反）。&lt;/p&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token number&#34;&gt;00&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;00&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;00&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;11&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;3&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token number&#34;&gt;11&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;11&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;11&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;00&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;3&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;strong&gt;补码&lt;/strong&gt;：正数的补码就是原码，负数的补码是反码 + 1。&lt;/p&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token number&#34;&gt;00&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;00&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;00&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;11&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;3&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token number&#34;&gt;11&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;11&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;11&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;01&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;3&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;按位非操作～&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;~&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;~&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;按位与操作 &amp;amp;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;按位或操作 |&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;按位异或操作 ^&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;^&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;^&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;^&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;^&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;按位左移操作 &amp;lt;&amp;lt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token number&#34;&gt;00&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;00&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;10&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;11&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;11&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token number&#34;&gt;11&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;3&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token number&#34;&gt;01&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;01&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;10&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;00&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;88&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;按位右移操作 &amp;gt;&amp;gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token number&#34;&gt;00&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;00&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;10&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;11&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;11&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token number&#34;&gt;11&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token number&#34;&gt;00&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;00&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;00&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;10&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;利用位运算实现快速计算&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;通过  &lt;code&gt;&amp;lt;&amp;lt;&lt;/code&gt; ， &lt;code&gt;&amp;gt;&amp;gt;&lt;/code&gt;  快速计算 2 的倍数问题。&lt;/p&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;n &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; 计算 n&lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;n &lt;span class=&#34;token operator&#34;&gt;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; 计算 n&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;，负奇数的运算不可用&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;n &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt; m &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; 计算 n&lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;^&lt;/span&gt;m&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;，即乘以 &lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt; 的 m 次方&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;n &lt;span class=&#34;token operator&#34;&gt;&gt;&gt;&lt;/span&gt; m &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; 计算 n&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;^&lt;/span&gt;m&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;，即除以 &lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt; 的 m 次方&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt; n &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;^&lt;/span&gt;n&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;通过  &lt;code&gt;^&lt;/code&gt;  快速交换两个整数。 通过  &lt;code&gt;^&lt;/code&gt;  快速交换两个整数。&lt;/p&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;a &lt;span class=&#34;token operator&#34;&gt;^&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; b&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;b &lt;span class=&#34;token operator&#34;&gt;^&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; a&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;a &lt;span class=&#34;token operator&#34;&gt;^&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; b&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;通过  &lt;code&gt;a &amp;amp; (-a)&lt;/code&gt;  快速获取 &lt;code&gt;a&lt;/code&gt;  的最后为 1 位置的整数。&lt;/p&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token number&#34;&gt;00&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;00&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;01&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;01&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;5&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;amp;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token number&#34;&gt;11&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;11&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;10&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;11&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;5&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token number&#34;&gt;00&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;00&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;00&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;01&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token number&#34;&gt;00&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;00&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;11&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;10&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;14&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;amp;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token number&#34;&gt;11&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;11&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;00&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;10&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;14&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token number&#34;&gt;00&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;00&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;00&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;10&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;利用位运算实现整数集合&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;一个数的二进制表示可以看作是一个集合（0 表示不在集合中，1 表示在集合中）。&lt;/p&gt;
+&lt;p&gt;比如集合  &lt;code&gt;&amp;#123;1, 3, 4, 8&amp;#125;&lt;/code&gt; ，可以表示成  &lt;code&gt;01 00 01 10 10&lt;/code&gt;  而对应的位运算也就可以看作是对集合进行的操作。&lt;/p&gt;
+&lt;p&gt;元素与集合的操作：&lt;/p&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;a &lt;span class=&#34;token operator&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; 把 i 插入到集合中&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;a &lt;span class=&#34;token operator&#34;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;~&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; 把 i 从集合中删除&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;a &lt;span class=&#34;token operator&#34;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; 判断 i 是否属于该集合（零不属于，非零属于）&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;集合之间的操作：&lt;/p&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;a 补   &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;~&lt;/span&gt;a&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;a 交 b &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; a &lt;span class=&#34;token operator&#34;&gt;&amp;amp;&lt;/span&gt; b&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;a 并 b &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; a &lt;span class=&#34;token operator&#34;&gt;|&lt;/span&gt; b&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;a 差 b &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; a &lt;span class=&#34;token operator&#34;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;~&lt;/span&gt;b&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;注意：整数在内存中是以补码的形式存在的，输出自然也是按照补码输出。&lt;/p&gt;
+&lt;p&gt;【例子】 Python 的 &lt;code&gt;bin()&lt;/code&gt;  输出。&lt;/p&gt;
+&lt;p&gt;[37]:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;print(bin(3))  # 0b11
+print(bin(-3))  # -0b11
+
+print(bin(-3 &amp;amp; 0xffffffff))  
+# 0b11111111111111111111111111111101
+
+print(bin(0xfffffffd))       
+# 0b11111111111111111111111111111101
+
+print(0xfffffffd)  # 4294967293
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Python 中 &lt;code&gt;bin&lt;/code&gt;  一个负数（十进制表示），输出的是它的原码的二进制表示加上个负号，巨坑。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Python 中的整型是补码形式存储的。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Python 中整型是不限制长度的不会超范围溢出。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;所以为了获得负数（十进制表示）的补码，需要手动将其和十六进制数 &lt;code&gt;0xffffffff&lt;/code&gt;  进行按位与操作，再交给 &lt;code&gt;bin()&lt;/code&gt;  进行输出，得到的才是负数的补码表示。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;条件语句&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;h2 id=&#34;if-语句&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#if-语句&#34;&gt;#&lt;/a&gt; if 语句&lt;/h2&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; expression&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    expr_true_suite&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;if 语句的  &lt;code&gt;expr_true_suite&lt;/code&gt;  代码块只有当条件表达式  &lt;code&gt;expression&lt;/code&gt;  结果为真时才执行，否则将继续执行紧跟在该代码块后面的语句。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;单个 if 语句中的  &lt;code&gt;expression&lt;/code&gt;  条件表达式可以通过布尔操作符  &lt;code&gt;and&lt;/code&gt; ， &lt;code&gt;or&lt;/code&gt;  和 &lt;code&gt;not&lt;/code&gt;  实现多重条件判断。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;【例子】&lt;/p&gt;
+&lt;p&gt;[38]:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;if 2 &amp;gt; 1 and not 2 &amp;gt; 3:
+    print(&#39;Correct Judgement!&#39;)
+
+# Correct Judgement!
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;h2 id=&#34;2-if-else-语句&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-if-else-语句&#34;&gt;#&lt;/a&gt; 2. if - else 语句&lt;/h2&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; expression&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    expr_true_suite&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;else&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    expr_false_suite&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ul&gt;
+&lt;li&gt;Python 提供与 if 搭配使用的 else，如果 if 语句的条件表达式结果布尔值为假，那么程序将执行 else 语句后的代码。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;【例子】&lt;/p&gt;
+&lt;p&gt;[39]:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;temp = input(&amp;quot;猜一猜小姐姐想的是哪个数字？&amp;quot;)
+guess = int(temp) # input 函数将接收的任何数据类型都默认为 str。
+if guess == 666:
+    print(&amp;quot;你太了解小姐姐的心思了！&amp;quot;)
+    print(&amp;quot;哼，猜对也没有奖励！&amp;quot;)
+else:
+    print(&amp;quot;猜错了，小姐姐现在心里想的是666！&amp;quot;)
+print(&amp;quot;游戏结束，不玩儿啦！&amp;quot;)
+猜一猜小姐姐想的是哪个数字？666
+你太了解小姐姐的心思了！
+哼，猜对也没有奖励！
+游戏结束，不玩儿啦！
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;if&lt;/code&gt;  语句支持嵌套，即在一个 &lt;code&gt;if&lt;/code&gt;  语句中嵌入另一个 &lt;code&gt;if&lt;/code&gt;  语句，从而构成不同层次的选择结构。&lt;/p&gt;
+&lt;p&gt;【例子】Python 使用缩进而不是大括号来标记代码块边界，因此要特别注意 &lt;code&gt;else&lt;/code&gt;  的悬挂问题。&lt;/p&gt;
+&lt;p&gt;[40]:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hi = 6
+if hi &amp;gt; 2:
+    if hi &amp;gt; 7:
+        print(&#39;好棒!好棒!&#39;)
+else:
+    print(&#39;切~&#39;)
+
+# 无输出
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;【例子】&lt;/p&gt;
+&lt;p&gt;[41]:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;temp = input(&amp;quot;猜一猜小姐姐想的是哪个数字？&amp;quot;)
+guess = int(temp)
+if guess &amp;gt; 8:
+    print(&amp;quot;大了，大了&amp;quot;)
+else:
+    if guess == 8:
+        print(&amp;quot;你太了解小姐姐的心思了！&amp;quot;)
+        print(&amp;quot;哼，猜对也没有奖励！&amp;quot;)
+    else:
+        print(&amp;quot;小了，小了&amp;quot;)
+print(&amp;quot;游戏结束，不玩儿啦！&amp;quot;)
+猜一猜小姐姐想的是哪个数字？8
+你太了解小姐姐的心思了！
+哼，猜对也没有奖励！
+游戏结束，不玩儿啦！
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;3-if-elif-else-语句&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3-if-elif-else-语句&#34;&gt;#&lt;/a&gt; 3. if - elif - else 语句&lt;/h2&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; expression1&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    expr1_true_suite&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;elif&lt;/span&gt; expression2&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    expr2_true_suite&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;elif&lt;/span&gt; expressionN&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    exprN_true_suite&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;else&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    expr_false_suite&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ul&gt;
+&lt;li&gt;elif 语句即为 else if，用来检查多个表达式是否为真，并在为真时执行特定代码块中的代码。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;【例子】&lt;/p&gt;
+&lt;p&gt;[42]:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;temp = input(&#39;请输入成绩:&#39;)
+source = int(temp)
+if 100 &amp;gt;= source &amp;gt;= 90:
+    print(&#39;A&#39;)
+elif 90 &amp;gt; source &amp;gt;= 80:
+    print(&#39;B&#39;)
+elif 80 &amp;gt; source &amp;gt;= 60:
+    print(&#39;C&#39;)
+elif 60 &amp;gt; source &amp;gt;= 0:
+    print(&#39;D&#39;)
+else:
+    print(&#39;输入错误！&#39;)
+请输入成绩:99
+A
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;4-assert-关键词&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#4-assert-关键词&#34;&gt;#&lt;/a&gt; 4. assert 关键词&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;assert&lt;/code&gt;  这个关键词我们称之为 “断言”，当这个关键词后边的条件为 False 时，程序自动崩溃并抛出 &lt;code&gt;AssertionError&lt;/code&gt;  的异常。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;【例子】&lt;/p&gt;
+&lt;p&gt;[ ]:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;my_list = [&#39;lsgogroup&#39;]
+my_list.pop(0)
+assert len(my_list) &amp;gt; 0
+
+# AssertionError
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;【例子】在进行单元测试时，可以用来在程序中置入检查点，只有条件为 True 才能让程序正常工作。&lt;/p&gt;
+&lt;p&gt;[ ]:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;assert 3 &amp;gt; 7
+
+# AssertionError
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;循环语句&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#循环语句&#34;&gt;#&lt;/a&gt; 循环语句&lt;/h1&gt;
+&lt;h2 id=&#34;1-while-循环&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-while-循环&#34;&gt;#&lt;/a&gt; 1. while 循环&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;while&lt;/code&gt;  语句最基本的形式包括一个位于顶部的布尔表达式，一个或多个属于 &lt;code&gt;while&lt;/code&gt;  代码块的缩进语句。&lt;/p&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;while&lt;/span&gt; 布尔表达式&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    代码块&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;code&gt;while&lt;/code&gt;  循环的代码块会一直循环执行，直到布尔表达式的值为布尔假。&lt;/p&gt;
+&lt;p&gt;如果布尔表达式不带有 &lt;code&gt;&amp;lt;、&amp;gt;、==、！=、in、not in&lt;/code&gt;  等运算符，仅仅给出数值之类的条件，也是可以的。当 &lt;code&gt;while&lt;/code&gt;  后写入一个非零整数时，视为真值，执行循环体；写入 &lt;code&gt;0&lt;/code&gt;  时，视为假值，不执行循环体。也可以写入 &lt;code&gt;str、list&lt;/code&gt;  或任何序列，长度非零则视为真值，执行循环体；否则视为假值，不执行循环体。&lt;/p&gt;
+&lt;p&gt;【例子】&lt;/p&gt;
+&lt;p&gt;[44]:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;count = 0
+while count &amp;lt; 3:
+    temp = input(&amp;quot;猜一猜小姐姐想的是哪个数字？&amp;quot;)
+    guess = int(temp)
+    if guess &amp;gt; 8:
+        print(&amp;quot;大了，大了&amp;quot;)
+    else:
+        if guess == 8:
+            print(&amp;quot;你太了解小姐姐的心思了！&amp;quot;)
+            print(&amp;quot;哼，猜对也没有奖励！&amp;quot;)
+            count = 3
+        else:
+            print(&amp;quot;小了，小了&amp;quot;)
+    count = count + 1
+print(&amp;quot;游戏结束，不玩儿啦！&amp;quot;)
+猜一猜小姐姐想的是哪个数字？8
+你太了解小姐姐的心思了！
+哼，猜对也没有奖励！
+游戏结束，不玩儿啦！
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;【例子】布尔表达式返回 0，循环终止。&lt;/p&gt;
+&lt;p&gt;[45]:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;string = &#39;abcd&#39;
+while string:
+    print(string)
+    string = string[1:]
+
+# abcd
+# bcd
+# cd
+# d
+abcd
+bcd
+cd
+d
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;2-while-else-循环&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-while-else-循环&#34;&gt;#&lt;/a&gt; 2. while - else 循环&lt;/h2&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;while&lt;/span&gt; 布尔表达式&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    代码块&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;else&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    代码块&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;当 &lt;code&gt;while&lt;/code&gt;  循环正常执行完的情况下，执行 &lt;code&gt;else&lt;/code&gt;  输出，如果 &lt;code&gt;while&lt;/code&gt;  循环中执行了跳出循环的语句，比如  &lt;code&gt;break&lt;/code&gt; ，将不执行 &lt;code&gt;else&lt;/code&gt;  代码块的内容。&lt;/p&gt;
+&lt;p&gt;【例子】&lt;/p&gt;
+&lt;p&gt;[46]:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;count = 0
+while count &amp;lt; 5:
+    print(&amp;quot;%d is  less than 5&amp;quot; % count)
+    count = count + 1
+else:
+    print(&amp;quot;%d is not less than 5&amp;quot; % count)
+    
+# 0 is  less than 5
+# 1 is  less than 5
+# 2 is  less than 5
+# 3 is  less than 5
+# 4 is  less than 5
+# 5 is not less than 5
+0 is  less than 5
+1 is  less than 5
+2 is  less than 5
+3 is  less than 5
+4 is  less than 5
+5 is not less than 5
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;【例子】&lt;/p&gt;
+&lt;p&gt;[47]:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;count = 0
+while count &amp;lt; 5:
+    print(&amp;quot;%d is  less than 5&amp;quot; % count)
+    count = 6
+    break
+else:
+    print(&amp;quot;%d is not less than 5&amp;quot; % count)
+
+# 0 is  less than 5
+0 is  less than 5
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;3-for-循环&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3-for-循环&#34;&gt;#&lt;/a&gt; 3. for 循环&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;for&lt;/code&gt;  循环是迭代循环，在 Python 中相当于一个通用的序列迭代器，可以遍历任何有序序列，如 &lt;code&gt;str、list、tuple&lt;/code&gt;  等，也可以遍历任何可迭代对象，如 &lt;code&gt;dict&lt;/code&gt; 。&lt;/p&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; 迭代变量 &lt;span class=&#34;token keyword&#34;&gt;in&lt;/span&gt; 可迭代对象&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    代码块&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;每次循环，迭代变量被设置为可迭代对象的当前元素，提供给代码块使用。&lt;/p&gt;
+&lt;p&gt;【例子】&lt;/p&gt;
+&lt;p&gt;[48]:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;for i in &#39;ILoveLSGO&#39;:
+    print(i, end=&#39; &#39;)  # 不换行输出
+
+# I L o v e L S G O
+I L o v e L S G O 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;【例子】&lt;/p&gt;
+&lt;p&gt;[49]:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;member = [&#39;张三&#39;, &#39;李四&#39;, &#39;刘德华&#39;, &#39;刘六&#39;, &#39;周润发&#39;]
+for each in member:
+    print(each)
+
+# 张三
+# 李四
+# 刘德华
+# 刘六
+# 周润发
+
+for i in range(len(member)):
+    print(member[i])
+
+# 张三
+# 李四
+# 刘德华
+# 刘六
+# 周润发
+张三
+李四
+刘德华
+刘六
+周润发
+张三
+李四
+刘德华
+刘六
+周润发
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;【例子】&lt;/p&gt;
+&lt;p&gt;[50]:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;dic = &amp;#123;&#39;a&#39;: 1, &#39;b&#39;: 2, &#39;c&#39;: 3, &#39;d&#39;: 4&amp;#125;
+
+for key, value in dic.items():
+    print(key, value, sep=&#39;:&#39;, end=&#39; &#39;)
+    
+# a:1 b:2 c:3 d:4 
+a:1 b:2 c:3 d:4 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;【例子】&lt;/p&gt;
+&lt;p&gt;[51]:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;dic = &amp;#123;&#39;a&#39;: 1, &#39;b&#39;: 2, &#39;c&#39;: 3, &#39;d&#39;: 4&amp;#125;
+
+for key in dic.keys():
+    print(key, end=&#39; &#39;)
+    
+# a b c d 
+a b c d 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;【例子】&lt;/p&gt;
+&lt;p&gt;[52]:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;dic = &amp;#123;&#39;a&#39;: 1, &#39;b&#39;: 2, &#39;c&#39;: 3, &#39;d&#39;: 4&amp;#125;
+
+for value in dic.values():
+    print(value, end=&#39; &#39;)
+    
+# 1 2 3 4
+1 2 3 4 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;4-for-else-循环&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#4-for-else-循环&#34;&gt;#&lt;/a&gt; 4. for - else 循环&lt;/h2&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; 迭代变量 &lt;span class=&#34;token keyword&#34;&gt;in&lt;/span&gt; 可迭代对象&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    代码块&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;else&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    代码块&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;当 &lt;code&gt;for&lt;/code&gt;  循环正常执行完的情况下，执行 &lt;code&gt;else&lt;/code&gt;  输出，如果 &lt;code&gt;for&lt;/code&gt;  循环中执行了跳出循环的语句，比如  &lt;code&gt;break&lt;/code&gt; ，将不执行 &lt;code&gt;else&lt;/code&gt;  代码块的内容，与 &lt;code&gt;while - else&lt;/code&gt;  语句一样。&lt;/p&gt;
+&lt;p&gt;【例子】&lt;/p&gt;
+&lt;p&gt;[53]:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;for num in range(10, 20):  # 迭代 10 到 20 之间的数字
+    for i in range(2, num):  # 根据因子迭代
+        if num % i == 0:  # 确定第一个因子
+            j = num / i  # 计算第二个因子
+            print(&#39;%d 等于 %d * %d&#39; % (num, i, j))
+            break  # 跳出当前循环
+    else:  # 循环的 else 部分
+        print(num, &#39;是一个质数&#39;)
+
+# 10 等于 2 * 5
+# 11 是一个质数
+# 12 等于 2 * 6
+# 13 是一个质数
+# 14 等于 2 * 7
+# 15 等于 3 * 5
+# 16 等于 2 * 8
+# 17 是一个质数
+# 18 等于 2 * 9
+# 19 是一个质数
+10 等于 2 * 5
+11 是一个质数
+12 等于 2 * 6
+13 是一个质数
+14 等于 2 * 7
+15 等于 3 * 5
+16 等于 2 * 8
+17 是一个质数
+18 等于 2 * 9
+19 是一个质数
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;5-range-函数&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#5-range-函数&#34;&gt;#&lt;/a&gt; 5. range () 函数&lt;/h2&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token builtin&#34;&gt;range&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;start&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; stop&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; step&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ul&gt;
+&lt;li&gt;这个 BIF（Built-in functions）有三个参数，其中用中括号括起来的两个表示这两个参数是可选的。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;step=1&lt;/code&gt;  表示第三个参数的默认值是 1。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;range&lt;/code&gt;  这个 BIF 的作用是生成一个从 &lt;code&gt;start&lt;/code&gt;  参数的值开始到 &lt;code&gt;stop&lt;/code&gt;  参数的值结束的数字序列，该序列包含 &lt;code&gt;start&lt;/code&gt;  的值但不包含 &lt;code&gt;stop&lt;/code&gt;  的值。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;【例子】&lt;/p&gt;
+&lt;p&gt;[54]:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;for i in range(2, 9):  # 不包含9
+    print(i)
+
+# 2
+# 3
+# 4
+# 5
+# 6
+# 7
+# 8
+2
+3
+4
+5
+6
+7
+8
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;【例子】&lt;/p&gt;
+&lt;p&gt;[55]:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;for i in range(1, 10, 2):
+    print(i)
+
+# 1
+# 3
+# 5
+# 7
+# 9
+1
+3
+5
+7
+9
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;6-enumerate函数&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#6-enumerate函数&#34;&gt;#&lt;/a&gt; 6. enumerate () 函数&lt;/h2&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token builtin&#34;&gt;enumerate&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;sequence&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;start&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ul&gt;
+&lt;li&gt;sequence：一个序列、迭代器或其他支持迭代对象。&lt;/li&gt;
+&lt;li&gt;start：下标起始位置。&lt;/li&gt;
+&lt;li&gt;返回 enumerate (枚举) 对象&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;【例子】&lt;/p&gt;
+&lt;p&gt;[56]:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;seasons = [&#39;Spring&#39;, &#39;Summer&#39;, &#39;Fall&#39;, &#39;Winter&#39;]
+lst = list(enumerate(seasons))
+print(lst)
+# [(0, &#39;Spring&#39;), (1, &#39;Summer&#39;), (2, &#39;Fall&#39;), (3, &#39;Winter&#39;)]
+lst = list(enumerate(seasons, start=1))  # 下标从 1 开始
+print(lst)
+# [(1, &#39;Spring&#39;), (2, &#39;Summer&#39;), (3, &#39;Fall&#39;), (4, &#39;Winter&#39;)]
+[(0, &#39;Spring&#39;), (1, &#39;Summer&#39;), (2, &#39;Fall&#39;), (3, &#39;Winter&#39;)]
+[(1, &#39;Spring&#39;), (2, &#39;Summer&#39;), (3, &#39;Fall&#39;), (4, &#39;Winter&#39;)]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;enumerate()&lt;/code&gt;  与 for 循环的结合使用。&lt;/p&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; i&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; a &lt;span class=&#34;token keyword&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;enumerate&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;A&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    do something &lt;span class=&#34;token keyword&#34;&gt;with&lt;/span&gt; a&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;用  &lt;code&gt;enumerate(A)&lt;/code&gt;  不仅返回了  &lt;code&gt;A&lt;/code&gt;  中的元素，还顺便给该元素一个索引值 (默认从 0 开始)。此外，用  &lt;code&gt;enumerate(A, j)&lt;/code&gt;  还可以确定索引起始值为  &lt;code&gt;j&lt;/code&gt; 。&lt;/p&gt;
+&lt;p&gt;【例子】&lt;/p&gt;
+&lt;p&gt;[57]:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;languages = [&#39;Python&#39;, &#39;R&#39;, &#39;Matlab&#39;, &#39;C++&#39;]
+for language in languages:
+    print(&#39;I love&#39;, language)
+print(&#39;Done!&#39;)
+# I love Python
+# I love R
+# I love Matlab
+# I love C++
+# Done!
+
+
+for i, language in enumerate(languages, 2):
+    print(i, &#39;I love&#39;, language)
+print(&#39;Done!&#39;)
+# 2 I love Python
+# 3 I love R
+# 4 I love Matlab
+# 5 I love C++
+# Done!
+I love Python
+I love R
+I love Matlab
+I love C++
+Done!
+2 I love Python
+3 I love R
+4 I love Matlab
+5 I love C++
+Done!
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;7-break-语句&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#7-break-语句&#34;&gt;#&lt;/a&gt; 7. break 语句&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;break&lt;/code&gt;  语句可以跳出当前所在层的循环。&lt;/p&gt;
+&lt;p&gt;【例子】&lt;/p&gt;
+&lt;p&gt;[59]:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;import random
+secret = random.randint(1, 10) #[1,10]之间的随机数
+
+while True:
+    temp = input(&amp;quot;猜一猜小姐姐想的是哪个数字？&amp;quot;)
+    guess = int(temp)
+    if guess &amp;gt; secret:
+        print(&amp;quot;大了，大了&amp;quot;)
+    else:
+        if guess == secret:
+            print(&amp;quot;你太了解小姐姐的心思了！&amp;quot;)
+            print(&amp;quot;哼，猜对也没有奖励！&amp;quot;)
+            break
+        else:
+            print(&amp;quot;小了，小了&amp;quot;)
+print(&amp;quot;游戏结束，不玩儿啦！&amp;quot;)
+猜一猜小姐姐想的是哪个数字？8
+你太了解小姐姐的心思了！
+哼，猜对也没有奖励！
+游戏结束，不玩儿啦！
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;8-continue-语句&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#8-continue-语句&#34;&gt;#&lt;/a&gt; 8. continue 语句&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;continue&lt;/code&gt;  终止本轮循环并开始下一轮循环。&lt;/p&gt;
+&lt;p&gt;【例子】&lt;/p&gt;
+&lt;p&gt;[60]:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;for i in range(10):
+    if i % 2 != 0:
+        print(i)
+        continue
+    i += 2
+    print(i)
+
+# 2
+# 1
+# 4
+# 3
+# 6
+# 5
+# 8
+# 7
+# 10
+# 9
+2
+1
+4
+3
+6
+5
+8
+7
+10
+9
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;9-pass-语句&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#9-pass-语句&#34;&gt;#&lt;/a&gt; 9. pass 语句&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;pass&lt;/code&gt;  语句的意思是 “不做任何事”，如果你在需要有语句的地方不写任何语句，那么解释器会提示出错，而  &lt;code&gt;pass&lt;/code&gt;  语句就是用来解决这些问题的。&lt;/p&gt;
+&lt;p&gt;【例子】&lt;/p&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;a_func&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# SyntaxError: unexpected EOF while parsing&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;【例子】&lt;/p&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;a_func&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;pass&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;code&gt;pass&lt;/code&gt;  是空语句，不做任何操作，只起到占位的作用，其作用是为了保持程序结构的完整性。尽管 &lt;code&gt;pass&lt;/code&gt;  语句不做任何操作，但如果暂时不确定要在一个位置放上什么样的代码，可以先放置一个 &lt;code&gt;pass&lt;/code&gt;  语句，让代码可以正常运行。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;10-推导式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#10-推导式&#34;&gt;#&lt;/a&gt; 10. 推导式&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;列表推导式&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt; expr &lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; value &lt;span class=&#34;token keyword&#34;&gt;in&lt;/span&gt; collection &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; condition&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;【例子】&lt;/p&gt;
+&lt;p&gt;[61]:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;x = [-4, -2, 0, 2, 4]
+y = [a * 2 for a in x]
+print(y)
+# [-8, -4, 0, 4, 8]
+[-8, -4, 0, 4, 8]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;【例子】&lt;/p&gt;
+&lt;p&gt;[63]:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;x = [i ** 2 for i in range(1, 10)]
+print(x)
+# [1, 4, 9, 16, 25, 36, 49, 64, 81]
+[1, 4, 9, 16, 25, 36, 49, 64, 81]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;【例子】&lt;/p&gt;
+&lt;p&gt;[64]:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;x = [(i, i ** 2) for i in range(6)]
+print(x)
+
+# [(0, 0), (1, 1), (2, 4), (3, 9), (4, 16), (5, 25)]
+[(0, 0), (1, 1), (2, 4), (3, 9), (4, 16), (5, 25)]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;【例子】&lt;/p&gt;
+&lt;p&gt;[65]:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;x = [i for i in range(100) if (i % 2) != 0 and (i % 3) == 0]
+print(x)
+
+# [3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87, 93, 99]
+[3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87, 93, 99]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;【例子】&lt;/p&gt;
+&lt;p&gt;[66]:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;a = [(i, j) for i in range(0, 3) for j in range(0, 3)]
+print(a)
+
+# [(0, 0), (0, 1), (0, 2), (1, 0), (1, 1), (1, 2), (2, 0), (2, 1), (2, 2)]
+[(0, 0), (0, 1), (0, 2), (1, 0), (1, 1), (1, 2), (2, 0), (2, 1), (2, 2)]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;【例子】&lt;/p&gt;
+&lt;p&gt;[67]:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;x = [[i, j] for i in range(0, 3) for j in range(0, 3)]
+print(x)
+# [[0, 0], [0, 1], [0, 2], [1, 0], [1, 1], [1, 2], [2, 0], [2, 1], [2, 2]]
+
+x[0][0] = 10
+print(x)
+# [[10, 0], [0, 1], [0, 2], [1, 0], [1, 1], [1, 2], [2, 0], [2, 1], [2, 2]]
+[[0, 0], [0, 1], [0, 2], [1, 0], [1, 1], [1, 2], [2, 0], [2, 1], [2, 2]]
+[[10, 0], [0, 1], [0, 2], [1, 0], [1, 1], [1, 2], [2, 0], [2, 1], [2, 2]]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;【例子】&lt;/p&gt;
+&lt;p&gt;[68]:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;a = [(i, j) for i in range(0, 3) if i &amp;lt; 1 for j in range(0, 3) if j &amp;gt; 1]
+print(a)
+
+# [(0, 2)]
+[(0, 2)]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;元组推导式&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt; expr &lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; value &lt;span class=&#34;token keyword&#34;&gt;in&lt;/span&gt; collection &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; condition&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;【例子】&lt;/p&gt;
+&lt;p&gt;[69]:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;a = (x for x in range(10))
+print(a)
+
+# &amp;lt;generator object &amp;lt;genexpr&amp;gt; at 0x0000025BE511CC48&amp;gt;
+
+print(tuple(a))
+
+# (0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
+&amp;lt;generator object &amp;lt;genexpr&amp;gt; at 0x0000014CEC2E28B8&amp;gt;
+(0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;字典推导式&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt; key_expr&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; value_expr &lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; value &lt;span class=&#34;token keyword&#34;&gt;in&lt;/span&gt; collection &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; condition&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;【例子】&lt;/p&gt;
+&lt;p&gt;[70]:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;b = &amp;#123;i: i % 2 == 0 for i in range(10) if i % 3 == 0&amp;#125;
+print(b)
+# &amp;#123;0: True, 3: False, 6: True, 9: False&amp;#125;
+&amp;#123;0: True, 3: False, 6: True, 9: False&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;集合推导式&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;#123; expr for value in collection [if condition] &amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;【例子】&lt;/p&gt;
+&lt;p&gt;[71]:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;c = &amp;#123;i for i in [1, 2, 3, 4, 5, 5, 6, 4, 3, 2, 1]&amp;#125;
+print(c)
+# &amp;#123;1, 2, 3, 4, 5, 6&amp;#125;
+&amp;#123;1, 2, 3, 4, 5, 6&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;其它&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;next(iterator[, default])&lt;/code&gt;  Return the next item from the iterator. If default is given and the iterator is exhausted, it is returned instead of raising StopIteration.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;【例子】&lt;/p&gt;
+&lt;p&gt;[72]:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;e = (i for i in range(10))
+print(e)
+# &amp;lt;generator object &amp;lt;genexpr&amp;gt; at 0x0000007A0B8D01B0&amp;gt;
+
+print(next(e))  # 0
+print(next(e))  # 1
+
+for each in e:
+    print(each, end=&#39; &#39;)
+
+# 2 3 4 5 6 7 8 9
+&amp;lt;generator object &amp;lt;genexpr&amp;gt; at 0x0000014CEC389C78&amp;gt;
+0
+1
+2 3 4 5 6 7 8 9 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;【例子】&lt;/p&gt;
+&lt;p&gt;[73]:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;s = sum([i for i in range(101)])
+print(s)  # 5050
+s = sum((i for i in range(101)))
+print(s)  # 5050
+5050
+5050
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;异常处理&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#异常处理&#34;&gt;#&lt;/a&gt; 异常处理&lt;/h1&gt;
+&lt;p&gt;异常就是运行期检测到的错误。计算机语言针对可能出现的错误定义了异常类型，某种错误引发对应的异常时，异常处理程序将被启动，从而恢复程序的正常运行。&lt;/p&gt;
+&lt;h2 id=&#34;1-python-标准异常总结&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-python-标准异常总结&#34;&gt;#&lt;/a&gt; 1. Python 标准异常总结&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;BaseException：所有异常的 &lt;strong&gt;基类&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Exception：常规异常的 &lt;strong&gt;基类&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;StandardError：所有的内建标准异常的基类&lt;/li&gt;
+&lt;li&gt;ArithmeticError：所有数值计算异常的基类&lt;/li&gt;
+&lt;li&gt;FloatingPointError：浮点计算异常&lt;/li&gt;
+&lt;li&gt;OverflowError：数值运算超出最大限制&lt;/li&gt;
+&lt;li&gt;ZeroDivisionError：除数为零&lt;/li&gt;
+&lt;li&gt;AssertionError：断言语句（assert）失败&lt;/li&gt;
+&lt;li&gt;AttributeError：尝试访问未知的对象属性&lt;/li&gt;
+&lt;li&gt;EOFError：没有内建输入，到达 EOF 标记&lt;/li&gt;
+&lt;li&gt;EnvironmentError：操作系统异常的基类&lt;/li&gt;
+&lt;li&gt;IOError：输入 / 输出操作失败&lt;/li&gt;
+&lt;li&gt;OSError：操作系统产生的异常（例如打开一个不存在的文件）&lt;/li&gt;
+&lt;li&gt;WindowsError：系统调用失败&lt;/li&gt;
+&lt;li&gt;ImportError：导入模块失败的时候&lt;/li&gt;
+&lt;li&gt;KeyboardInterrupt：用户中断执行&lt;/li&gt;
+&lt;li&gt;LookupError：无效数据查询的基类&lt;/li&gt;
+&lt;li&gt;IndexError：索引超出序列的范围&lt;/li&gt;
+&lt;li&gt;KeyError：字典中查找一个不存在的关键字&lt;/li&gt;
+&lt;li&gt;MemoryError：内存溢出（可通过删除对象释放内存）&lt;/li&gt;
+&lt;li&gt;NameError：尝试访问一个不存在的变量&lt;/li&gt;
+&lt;li&gt;UnboundLocalError：访问未初始化的本地变量&lt;/li&gt;
+&lt;li&gt;ReferenceError：弱引用试图访问已经垃圾回收了的对象&lt;/li&gt;
+&lt;li&gt;RuntimeError：一般的运行时异常&lt;/li&gt;
+&lt;li&gt;NotImplementedError：尚未实现的方法&lt;/li&gt;
+&lt;li&gt;SyntaxError：语法错误导致的异常&lt;/li&gt;
+&lt;li&gt;IndentationError：缩进错误导致的异常&lt;/li&gt;
+&lt;li&gt;TabError：Tab 和空格混用&lt;/li&gt;
+&lt;li&gt;SystemError：一般的解释器系统异常&lt;/li&gt;
+&lt;li&gt;TypeError：不同类型间的无效操作&lt;/li&gt;
+&lt;li&gt;ValueError：传入无效的参数&lt;/li&gt;
+&lt;li&gt;UnicodeError：Unicode 相关的异常&lt;/li&gt;
+&lt;li&gt;UnicodeDecodeError：Unicode 解码时的异常&lt;/li&gt;
+&lt;li&gt;UnicodeEncodeError：Unicode 编码错误导致的异常&lt;/li&gt;
+&lt;li&gt;UnicodeTranslateError：Unicode 转换错误导致的异常&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;异常体系内部有层次关系，Python 异常体系中的部分关系如下所示：&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://img-blog.csdnimg.cn/20200710131404548.png&#34; alt=&#34;Image&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;2-python标准警告总结&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-python标准警告总结&#34;&gt;#&lt;/a&gt; 2. Python 标准警告总结&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Warning：警告的基类&lt;/li&gt;
+&lt;li&gt;DeprecationWarning：关于被弃用的特征的警告&lt;/li&gt;
+&lt;li&gt;FutureWarning：关于构造将来语义会有改变的警告&lt;/li&gt;
+&lt;li&gt;UserWarning：用户代码生成的警告&lt;/li&gt;
+&lt;li&gt;PendingDeprecationWarning：关于特性将会被废弃的警告&lt;/li&gt;
+&lt;li&gt;RuntimeWarning：可疑的运行时行为 (runtime behavior) 的警告&lt;/li&gt;
+&lt;li&gt;SyntaxWarning：可疑语法的警告&lt;/li&gt;
+&lt;li&gt;ImportWarning：用于在导入模块过程中触发的警告&lt;/li&gt;
+&lt;li&gt;UnicodeWarning：与 Unicode 相关的警告&lt;/li&gt;
+&lt;li&gt;BytesWarning：与字节或字节码相关的警告&lt;/li&gt;
+&lt;li&gt;ResourceWarning：与资源使用相关的警告&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;3-try-except-语句&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3-try-except-语句&#34;&gt;#&lt;/a&gt; 3. try - except 语句&lt;/h2&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;try&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    检测范围&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;except&lt;/span&gt; Exception&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;as&lt;/span&gt; reason&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    出现异常后的处理代码&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;try 语句按照如下方式工作：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;首先，执行 &lt;code&gt;try&lt;/code&gt;  子句（在关键字 &lt;code&gt;try&lt;/code&gt;  和关键字 &lt;code&gt;except&lt;/code&gt;  之间的语句）&lt;/li&gt;
+&lt;li&gt;如果没有异常发生，忽略 &lt;code&gt;except&lt;/code&gt;  子句， &lt;code&gt;try&lt;/code&gt;  子句执行后结束。&lt;/li&gt;
+&lt;li&gt;如果在执行 &lt;code&gt;try&lt;/code&gt;  子句的过程中发生了异常，那么 &lt;code&gt;try&lt;/code&gt;  子句余下的部分将被忽略。如果异常的类型和 &lt;code&gt;except&lt;/code&gt;  之后的名称相符，那么对应的 &lt;code&gt;except&lt;/code&gt;  子句将被执行。最后执行 &lt;code&gt;try - except&lt;/code&gt;  语句之后的代码。&lt;/li&gt;
+&lt;li&gt;如果一个异常没有与任何的 &lt;code&gt;except&lt;/code&gt;  匹配，那么这个异常将会传递给上层的 &lt;code&gt;try&lt;/code&gt;  中。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;【例子】&lt;/p&gt;
+&lt;p&gt;[2]:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;try:
+    f = open(&#39;test.txt&#39;)
+    print(f.read())
+    f.close()
+except OSError:
+    print(&#39;打开文件出错&#39;)
+
+# 打开文件出错
+打开文件出错
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;【例子】&lt;/p&gt;
+&lt;p&gt;[3]:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;try:
+    f = open(&#39;test.txt&#39;)
+    print(f.read())
+    f.close()
+except OSError as error:
+    print(&#39;打开文件出错\n原因是：&#39; + str(error))
+
+# 打开文件出错
+# 原因是：[Errno 2] No such file or directory: &#39;test.txt&#39;
+打开文件出错
+原因是：[Errno 2] No such file or directory: &#39;test.txt&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;一个 &lt;code&gt;try&lt;/code&gt;  语句可能包含多个 &lt;code&gt;except&lt;/code&gt;  子句，分别来处理不同的特定的异常。最多只有一个分支会被执行。&lt;/p&gt;
+&lt;p&gt;【例子】&lt;/p&gt;
+&lt;p&gt;[4]:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;try:
+    int(&amp;quot;abc&amp;quot;)
+    s = 1 + &#39;1&#39;
+    f = open(&#39;test.txt&#39;)
+    print(f.read())
+    f.close()
+except OSError as error:
+    print(&#39;打开文件出错\n原因是：&#39; + str(error))
+except TypeError as error:
+    print(&#39;类型出错\n原因是：&#39; + str(error))
+except ValueError as error:
+    print(&#39;数值出错\n原因是：&#39; + str(error))
+
+# 数值出错
+# 原因是：invalid literal for int() with base 10: &#39;abc&#39;
+数值出错
+原因是：invalid literal for int() with base 10: &#39;abc&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;【例子】&lt;/p&gt;
+&lt;p&gt;[5]:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;dict1 = &amp;#123;&#39;a&#39;: 1, &#39;b&#39;: 2, &#39;v&#39;: 22&amp;#125;
+try:
+    x = dict1[&#39;y&#39;]
+except LookupError:
+    print(&#39;查询错误&#39;)
+except KeyError:
+    print(&#39;键错误&#39;)
+else:
+    print(x)
+
+# 查询错误
+查询错误
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;try-except-else&lt;/code&gt;  语句尝试查询不在 &lt;code&gt;dict&lt;/code&gt;  中的键值对，从而引发了异常。这一异常准确地说应属于 &lt;code&gt;KeyError&lt;/code&gt; ，但由于 &lt;code&gt;KeyError&lt;/code&gt;  是 &lt;code&gt;LookupError&lt;/code&gt;  的子类，且将 &lt;code&gt;LookupError&lt;/code&gt;  置于 &lt;code&gt;KeyError&lt;/code&gt;  之前，因此程序优先执行该 &lt;code&gt;except&lt;/code&gt;  代码块。所以，使用多个 &lt;code&gt;except&lt;/code&gt;  代码块时，必须坚持对其规范排序，要从最具针对性的异常到最通用的异常。&lt;/p&gt;
+&lt;p&gt;【例子】&lt;/p&gt;
+&lt;p&gt;[6]:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;dict1 = &amp;#123;&#39;a&#39;: 1, &#39;b&#39;: 2, &#39;v&#39;: 22&amp;#125;
+try:
+    x = dict1[&#39;y&#39;]
+except KeyError:
+    print(&#39;键错误&#39;)
+except LookupError:
+    print(&#39;查询错误&#39;)
+else:
+    print(x)
+
+# 键错误
+键错误
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;【例子】一个  &lt;code&gt;except&lt;/code&gt;  子句可以同时处理多个异常，这些异常将被放在一个括号里成为一个元组。&lt;/p&gt;
+&lt;p&gt;[7]:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;try:
+    s = 1 + &#39;1&#39;
+    int(&amp;quot;abc&amp;quot;)
+    f = open(&#39;test.txt&#39;)
+    print(f.read())
+    f.close()
+except (OSError, TypeError, ValueError) as error:
+    print(&#39;出错了！\n原因是：&#39; + str(error))
+
+# 出错了！
+# 原因是：unsupported operand type(s) for +: &#39;int&#39; and &#39;str&#39;
+出错了！
+原因是：unsupported operand type(s) for +: &#39;int&#39; and &#39;str&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;4-try-except-finally-语句&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#4-try-except-finally-语句&#34;&gt;#&lt;/a&gt; 4. try - except - finally 语句&lt;/h2&gt;
+&lt;p&gt;try: 检测范围 except Exception [as reason]: 出现异常后的处理代码 finally: 无论如何都会被执行的代码&lt;/p&gt;
+&lt;p&gt;不管 &lt;code&gt;try&lt;/code&gt;  子句里面有没有发生异常， &lt;code&gt;finally&lt;/code&gt;  子句都会执行。&lt;/p&gt;
+&lt;p&gt;【例子】如果一个异常在 &lt;code&gt;try&lt;/code&gt;  子句里被抛出，而又没有任何的 &lt;code&gt;except&lt;/code&gt;  把它截住，那么这个异常会在 &lt;code&gt;finally&lt;/code&gt;  子句执行后被抛出。&lt;/p&gt;
+&lt;p&gt;[10]:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;def divide(x, y):
+    try:
+        result = x / y
+        print(&amp;quot;result is&amp;quot;, result)
+    except ZeroDivisionError:
+        print(&amp;quot;division by zero!&amp;quot;)
+    finally:
+        print(&amp;quot;executing finally clause&amp;quot;)
+
+
+divide(2, 1)
+# result is 2.0
+# executing finally clause
+divide(2, 0)
+# division by zero!
+# executing finally clause
+divide(&amp;quot;2&amp;quot;, &amp;quot;1&amp;quot;)
+# executing finally clause
+# TypeError: unsupported operand type(s) for /: &#39;str&#39; and &#39;str&#39;
+result is 2.0
+executing finally clause
+division by zero!
+executing finally clause
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;5-try-except-else-语句&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#5-try-except-else-语句&#34;&gt;#&lt;/a&gt; 5. try - except - else 语句&lt;/h2&gt;
+&lt;p&gt;如果在 &lt;code&gt;try&lt;/code&gt;  子句执行时没有发生异常，Python 将执行 &lt;code&gt;else&lt;/code&gt;  语句后的语句。&lt;/p&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;try&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    检测范围&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;except&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    出现异常后的处理代码&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;else&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    如果没有异常执行这块代码&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;使用 &lt;code&gt;except&lt;/code&gt;  而不带任何异常类型，这不是一个很好的方式，我们不能通过该程序识别出具体的异常信息，因为它捕获所有的异常。&lt;/p&gt;
+&lt;p&gt;try: 检测范围 except (Exception1 [, Exception2 [,…ExceptionN]]]): 发生以上多个异常中的一个，执行这块代码 else: 如果没有异常执行这块代码&lt;/p&gt;
+&lt;p&gt;【例子】&lt;/p&gt;
+&lt;p&gt;[12]:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;try:
+    fh = open(&amp;quot;testfile.txt&amp;quot;, &amp;quot;w&amp;quot;)
+    fh.write(&amp;quot;这是一个测试文件，用于测试异常!!&amp;quot;)
+except IOError:
+    print(&amp;quot;Error: 没有找到文件或读取文件失败&amp;quot;)
+else:
+    print(&amp;quot;内容写入文件成功&amp;quot;)
+    fh.close()
+
+# 内容写入文件成功
+内容写入文件成功
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;注意： &lt;code&gt;else&lt;/code&gt;  语句的存在必须以 &lt;code&gt;except&lt;/code&gt;  语句的存在为前提，在没有 &lt;code&gt;except&lt;/code&gt;  语句的 &lt;code&gt;try&lt;/code&gt;  语句中使用 &lt;code&gt;else&lt;/code&gt;  语句，会引发语法错误。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;6-raise语句&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#6-raise语句&#34;&gt;#&lt;/a&gt; 6. raise 语句&lt;/h2&gt;
+&lt;p&gt;Python 使用 &lt;code&gt;raise&lt;/code&gt;  语句抛出一个指定的异常。&lt;/p&gt;
+&lt;p&gt;【例子】&lt;/p&gt;
+&lt;p&gt;[13]:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;try:
+    raise NameError(&#39;HiThere&#39;)
+except NameError:
+    print(&#39;An exception flew by!&#39;)
+    
+# An exception flew by!
+An exception flew by!
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>
