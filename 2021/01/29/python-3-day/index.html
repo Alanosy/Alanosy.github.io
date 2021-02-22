@@ -1,0 +1,1177 @@
+<!-- build time:Mon Feb 22 2021 12:20:33 GMT+0800 (中国标准时间) --><!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2"><meta name="theme-color" content="#FFF"><link rel="apple-touch-icon" sizes="180x180" href="/imageshttps:/tenadmin.oss-cn-chengdu.aliyuncs.com/images/apple-touch-icon.png"><link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico"><link rel="mask-icon" href="/images/logo.svg" color=""><link rel="manifest" href="/images/manifest.json"><meta name="msapplication-config" content="/images/browserconfig.xml"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="alternate" type="application/rss+xml" title="Alan" href="http://47.97.229.110/rss.xml"><link rel="alternate" type="application/atom+xml" title="Alan" href="http://47.97.229.110/atom.xml"><link rel="alternate" type="application/json" title="Alan" href="http://47.97.229.110/feed.json"><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC%E2%80%99:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext"><link rel="stylesheet" href="/css/app.css?v=0.2.5"><link rel="canonical" href="http://47.97.229.110/2021/01/29/python-3-day/"><title>python_3_day - python | Yume Shoka = Alan</title><meta name="generator" content="Hexo 5.3.0"></head><body itemscope itemtype="http://schema.org/WebPage"><div id="loading"><div class="cat"><div class="body"></div><div class="head"><div class="face"></div></div><div class="foot"><div class="tummy-end"></div><div class="bottom"></div><div class="legs left"></div><div class="legs right"></div></div><div class="paw"><div class="hands left"></div><div class="hands right"></div></div></div></div><div id="container"><header id="header" itemscope itemtype="http://schema.org/WPHeader"><div class="inner"><div id="brand"><div class="pjax"><h1 itemprop="name headline">python_3_day</h1><div class="meta"><span class="item" title="创建时间：2021-01-29 21:38:29"><span class="icon"><i class="ic i-calendar"></i> </span><span class="text">发表于</span> <time itemprop="dateCreated datePublished" datetime="2021-01-29T21:38:29+08:00">2021-01-29</time> </span><span class="item" title="本文字数"><span class="icon"><i class="ic i-pen"></i> </span><span class="text">本文字数</span> <span>35k</span> <span class="text">字</span> </span><span class="item" title="阅读时长"><span class="icon"><i class="ic i-clock"></i> </span><span class="text">阅读时长</span> <span>31 分钟</span></span></div></div></div><nav id="nav"><div class="inner"><div class="toggle"><div class="lines" aria-label="切换导航栏"><span class="line"></span> <span class="line"></span> <span class="line"></span></div></div><ul class="menu"><li class="item title"><a href="/" rel="start">Yume Shoka</a></li></ul><ul class="right"><li class="item theme"><i class="ic i-sun"></i></li><li class="item search"><i class="ic i-search"></i></li></ul></div></nav></div><div id="imgs" class="pjax"><ul><li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipexe4oykj20zk0m87ji.jpg"></li><li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipexbei4hj20zk0m8npd.jpg"></li><li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipeyonbf9j20zk0m8e81.jpg"></li><li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipey0a334j20zk0m8qpt.jpg"></li><li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclfw2t96j20zk0m8x6p.jpg"></li><li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicitspjpbj20zk0m81ky.jpg"></li></ul></div></header><div id="waves"><svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"/></defs><g class="parallax"><use xlink:href="#gentle-wave" x="48" y="0"/><use xlink:href="#gentle-wave" x="48" y="3"/><use xlink:href="#gentle-wave" x="48" y="5"/><use xlink:href="#gentle-wave" x="48" y="7"/></g></svg></div><main><div class="inner"><div id="main" class="pjax"><div class="article wrap"><div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList"><i class="ic i-home"></i> <span><a href="/">首页</a></span><i class="ic i-angle-right"></i> <span class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/python/" itemprop="item" rel="index" title="分类于 python"><span itemprop="name">python</span></a><meta itemprop="position" content="1"></span></div><article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN"><link itemprop="mainEntityOfPage" href="http://47.97.229.110/2021/01/29/python-3-day/"><span hidden itemprop="author" itemscope itemtype="http://schema.org/Person"><meta itemprop="image" content="/images/avatar.jpg"><meta itemprop="name" content="John Doe"><meta itemprop="description" content=", "></span><span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><meta itemprop="name" content="Alan"></span><div class="body md" itemprop="articleBody"><p>Python入门(下)<br>简介</p><p>函数</p><ol><li>函数的定义</li><li>函数的调用</li><li>函数文档</li><li>函数参数</li><li>函数的返回值</li><li>变量作用域</li></ol><p>Lambda-表达式</p><ol><li>匿名函数的定义</li><li>匿名函数的应用</li></ol><p>类与对象</p><ol><li>属性和方法组成对象</li><li>self是什么？</li><li>Python的魔法方法</li><li>公有和私有</li><li>继承</li><li>组合</li><li>类、类对象和实例对象</li><li>什么是绑定？</li><li>一些相关的内置函数（BIF）</li></ol><p>魔法方法</p><ol><li>基本的魔法方法</li><li>算术运算符</li><li>反算术运算符</li><li>增量赋值运算</li><li>一元运算符</li><li>属性访问</li><li>描述符</li><li>定制序列</li><li>迭代器</li></ol><p>简介<br>Python 是一种通用编程语言，其在科学计算和机器学习领域具有广泛的应用。如果我们打算利用 Python 来执行机器学习，那么对 Python 有一些基本的了解就是至关重要的。本 Python 入门系列体验就是为这样的初学者精心准备的。</p><p>本实验包括以下内容：</p><p>函数<br>函数的定义<br>函数的调用<br>函数文档<br>函数参数<br>函数的返回值<br>变量作用域<br>Lambda 表达式<br>匿名函数的定义<br>匿名函数的应用<br>类与对象<br>对象 = 属性 + 方法<br>self 是什么？<br>Python 的魔法方法<br>公有和私有<br>继承<br>组合<br>类、类对象和实例对象<br>什么是绑定？<br>一些相关的内置函数（BIF）<br>魔法方法<br>基本的魔法方法<br>算术运算符<br>反算术运算符<br>增量赋值运算符<br>一元运算符<br>属性访问<br>描述符<br>定制序列<br>迭代器<br>函数<br>函数的定义<br>还记得 Python 里面“万物皆对象”么？Python 把函数也当成对象，可以从另一个函数中返回出来而去构建高阶函数，比如： 参数是函数、返回值是函数。</p><p>我们首先来介绍函数的定义。</p><p>函数以def关键词开头，后接函数名和圆括号()。<br>函数执行的代码以冒号起始，并且缩进。<br>return [表达式] 结束函数，选择性地返回一个值给调用方。不带表达式的return相当于返回None。<br>def functionname (parameters):<br>“函数_文档字符串”<br>function_suite<br>return [expression]</p><p>函数的调用<br>【例子】</p><pre><code class="python">def printme(str):
+    print(str)
+​
+​
+printme(&quot;我要调用用户自定义函数!&quot;)  # 我要调用用户自定义函数!
+printme(&quot;再次调用同一函数&quot;)  # 再次调用同一函数
+temp = printme(&#39;hello&#39;) # hello
+print(temp)  # None</code></pre><p>我要调用用户自定义函数!<br>再次调用同一函数<br>hello<br>None<br>函数文档<br>def MyFirstFunction(name):<br>“函数定义过程中name是形参”<br># 因为Ta只是一个形式，表示占据一个参数位置<br>print(‘传递进来的{0}叫做实参，因为Ta是具体的参数值！’.format(name))<br>​<br>​<br>MyFirstFunction(‘老马的程序人生’)</p><h1 id="传递进来的老马的程序人生叫做实参，因为Ta是具体的参数值！"><a href="#传递进来的老马的程序人生叫做实参，因为Ta是具体的参数值！" class="headerlink" title="传递进来的老马的程序人生叫做实参，因为Ta是具体的参数值！"></a>传递进来的老马的程序人生叫做实参，因为Ta是具体的参数值！</h1><p>​<br>print(MyFirstFunction.<strong>doc</strong>)</p><h1 id="函数定义过程中name是形参"><a href="#函数定义过程中name是形参" class="headerlink" title="函数定义过程中name是形参"></a>函数定义过程中name是形参</h1><p>​<br>help(MyFirstFunction)</p><h1 id="Help-on-function-MyFirstFunction-in-module-main"><a href="#Help-on-function-MyFirstFunction-in-module-main" class="headerlink" title="Help on function MyFirstFunction in module main:"></a>Help on function MyFirstFunction in module <strong>main</strong>:</h1><h1 id="MyFirstFunction-name"><a href="#MyFirstFunction-name" class="headerlink" title="MyFirstFunction(name)"></a>MyFirstFunction(name)</h1><h1 id="函数定义过程中name是形参-1"><a href="#函数定义过程中name是形参-1" class="headerlink" title="函数定义过程中name是形参"></a>函数定义过程中name是形参</h1><p>传递进来的老马的程序人生叫做实参，因为Ta是具体的参数值！<br>函数定义过程中name是形参<br>Help on function MyFirstFunction in module <strong>main</strong>:</p><p>MyFirstFunction(name)<br>函数定义过程中name是形参</p><p>函数参数<br>Python 的函数具有非常灵活多样的参数形态，既可以实现简单的调用，又可以传入非常复杂的参数。从简到繁的参数形态如下：</p><p>位置参数 (positional argument)<br>默认参数 (default argument)<br>可变参数 (variable argument)<br>关键字参数 (keyword argument)<br>命名关键字参数 (name keyword argument)<br>参数组合</p><ol><li>位置参数<pre><code class="python">def functionname(arg1):
+    &quot;函数_文档字符串&quot;
+    function_suite
+    return [expression]</code></pre>arg1 - 位置参数 ，这些参数在调用函数 (call function) 时位置要固定。</li><li>默认参数<pre><code class="python">def functionname(arg1, arg2=v):
+    &quot;函数_文档字符串&quot;
+    function_suite
+    return [expression]</code></pre>arg2 = v - 默认参数 = 默认值，调用函数时，默认参数的值如果没有传入，则被认为是默认值。<br>默认参数一定要放在位置参数 后面，不然程序会报错。<br>【例子】<pre><code class="python">def printinfo(name, age=8):
+ print(&#39;Name:&#123;0&#125;,Age:&#123;1&#125;&#39;.format(name, age))
+​
+​
+printinfo(&#39;小马&#39;)  # Name:小马,Age:8
+printinfo(&#39;小马&#39;, 10)  # Name:小马,Age:10</code></pre>Name:小马,Age:8<br>Name:小马,Age:10<br>Python 允许函数调用时参数的顺序与声明时不一致，因为 Python 解释器能够用参数名匹配参数值。<br>【例子】<pre><code class="python">def printinfo(name, age):
+ print(&#39;Name:&#123;0&#125;,Age:&#123;1&#125;&#39;.format(name, age))
+​
+​
+printinfo(age=8, name=&#39;小马&#39;)  # Name:小马,Age:8</code></pre>Name:小马,Age:8</li><li>可变参数</li></ol><p>顾名思义，可变参数就是传入的参数个数是可变的，可以是 0, 1, 2 到任意个，是不定长的参数。</p><pre><code class="python">def functionname(arg1, arg2=v, *args):
+       &quot;函数_文档字符串&quot;
+       function_suite
+       return [expression]</code></pre><p><em>args - 可变参数，可以是从零个到任意个，自动组装成元组。<br>加了星号（</em>）的变量名会存放所有未命名的变量参数。<br>【例子】</p><pre><code class="python">def printinfo(arg1, *args):
+    print(arg1)
+    for var in args:
+        print(var)
+​
+​
+printinfo(10)  # 10
+printinfo(70, 60, 50)</code></pre><h1 id="70"><a href="#70" class="headerlink" title="70"></a>70</h1><h1 id="60"><a href="#60" class="headerlink" title="60"></a>60</h1><h1 id="50"><a href="#50" class="headerlink" title="50"></a>50</h1><p>10<br>70<br>60<br>50<br>4. 关键字参数</p><pre><code class="python">def functionname(arg1, arg2=v, args, *kw):
+       &quot;函数_文档字符串&quot;
+       function_suite
+       return [expression]</code></pre><p>**kw - 关键字参数，可以是从零个到任意个，自动组装成字典。<br>【例子】</p><pre><code class="python">def printinfo(arg1, *args, **kwargs):
+    print(arg1)
+    print(args)
+    print(kwargs)
+​
+​
+printinfo(70, 60, 50)
+# 70
+# (60, 50)
+# &#123;&#125;
+printinfo(70, 60, 50, a=1, b=2)
+# 70
+# (60, 50)
+# &#123;&#39;a&#39;: 1, &#39;b&#39;: 2&#125;</code></pre><p>70<br>(60, 50)<br>{}<br>70<br>(60, 50)<br>{‘a’: 1, ‘b’: 2}<br>「可变参数」和「关键字参数」的同异总结如下：</p><p>可变参数允许传入零个到任意个参数，它们在函数调用时自动组装为一个元组 (tuple)。<br>关键字参数允许传入零个到任意个参数，它们在函数内部自动组装为一个字典 (dict)。<br>5. 命名关键字参数</p><pre><code class="python">def functionname(arg1, arg2=v, args, *, nkw, *kw):
+       &quot;函数_文档字符串&quot;
+       function_suite
+       return [expression]</code></pre><p>*, nkw - 命名关键字参数，用户想要输入的关键字参数，定义方式是在nkw 前面加个分隔符 *。<br>如果要限制关键字参数的名字，就可以用「命名关键字参数」<br>使用命名关键字参数时，要特别注意不能缺少参数名。<br>【例子】</p><pre><code class="python">def printinfo(arg1, *, nkw, **kwargs):
+    print(arg1)
+    print(nkw)
+    print(kwargs)
+​
+​
+printinfo(70, nkw=10, a=1, b=2)
+# 70
+# 10
+# &#123;&#39;a&#39;: 1, &#39;b&#39;: 2&#125;
+​
+printinfo(70, 10, a=1, b=2)
+# TypeError: printinfo() takes 1 positional argument but 2 were given</code></pre><p>70<br>10<br>{‘a’: 1, ‘b’: 2}<br>没有写参数名nwk，因此 10 被当成「位置参数」，而原函数只有 1 个位置函数，现在调用了 2 个，因此程序会报错。<br>6. 参数组合</p><p>在 Python 中定义函数，可以用位置参数、默认参数、可变参数、命名关键字参数和关键字参数，这 5 种参数中的 4 个都可以一起使用，但是注意，参数定义的顺序必须是：</p><p>位置参数、默认参数、可变参数和关键字参数。<br>位置参数、默认参数、命名关键字参数和关键字参数。<br>要注意定义可变参数和关键字参数的语法：</p><p>*args 是可变参数，args 接收的是一个 tuple<br>**kw 是关键字参数，kw 接收的是一个 dict<br>命名关键字参数是为了限制调用者可以传入的参数名，同时可以提供默认值。定义命名关键字参数不要忘了写分隔符 *，否则定义的是位置参数。</p><p>警告：虽然可以组合多达 5 种参数，但不要同时使用太多的组合，否则函数很难懂。</p><p>函数的返回值<br>【例子】</p><pre><code class="python">def add(a, b):
+    return a + b
+​
+​
+print(add(1, 2))  # 3
+print(add([1, 2, 3], [4, 5, 6]))  # [1, 2, 3, 4, 5, 6]</code></pre><p>3<br>[1, 2, 3, 4, 5, 6]<br>【例子】</p><pre><code class="python">def back():
+    return [1, &#39;小马的程序人生&#39;, 3.14]
+​
+​
+print(back())  # [1, &#39;小马的程序人生&#39;, 3.14]</code></pre><p>[1, ‘小马的程序人生’, 3.14]<br>【例子】</p><pre><code class="python">def back():
+    return 1, &#39;小马的程序人生&#39;, 3.14
+​
+​
+print(back())  # (1, &#39;小马的程序人生&#39;, 3.14)</code></pre><p>(1, ‘小马的程序人生’, 3.14)<br>【例子】</p><pre><code class="python">def printme(str):
+    print(str)
+​
+temp = printme(&#39;hello&#39;) # hello
+print(temp) # None
+print(type(temp))  # &lt;class &#39;NoneType&#39;&gt;</code></pre><p>hello<br>None<br>&lt;class ‘NoneType’&gt;<br>变量作用域<br>Python 中，程序的变量并不是在哪个位置都可以访问的，访问权限决定于这个变量是在哪里赋值的。<br>定义在函数内部的变量拥有局部作用域，该变量称为局部变量。<br>定义在函数外部的变量拥有全局作用域，该变量称为全局变量。<br>局部变量只能在其被声明的函数内部访问，而全局变量可以在整个程序范围内访问。<br>【例子】</p><pre><code class="python">def discounts(price, rate):
+    final_price = price * rate
+    return final_price
+​
+​
+old_price = float(input(&#39;请输入原价:&#39;))  # 98
+rate = float(input(&#39;请输入折扣率:&#39;))  # 0.9
+new_price = discounts(old_price, rate)
+print(&#39;打折后价格是:%.2f&#39; % new_price)  # 88.20</code></pre><p>请输入原价:98<br>请输入折扣率:0.9<br>打折后价格是:88.20<br>当内部作用域想修改外部作用域的变量时，就要用到global和nonlocal关键字了。<br>【例子】</p><pre><code class="python">num = 1
+​
+​
+def fun1():
+    global num  # 需要使用 global 关键字声明
+    print(num)  # 1
+    num = 123
+    print(num)  # 123
+​
+​
+fun1()
+print(num)  # 123</code></pre><p>1<br>123<br>123<br>内嵌函数</p><p>【例子】</p><pre><code class="python">def outer():
+    print(&#39;outer函数在这被调用&#39;)
+​
+    def inner():
+        print(&#39;inner函数在这被调用&#39;)
+​
+    inner()  # 该函数只能在outer函数内部被调用
+​
+​
+outer()
+# outer函数在这被调用
+# inner函数在这被调用</code></pre><p>outer函数在这被调用<br>inner函数在这被调用<br>闭包</p><p>是函数式编程的一个重要的语法结构，是一种特殊的内嵌函数。<br>如果在一个内部函数里对外层非全局作用域的变量进行引用，那么内部函数就被认为是闭包。<br>通过闭包可以访问外层非全局作用域的变量，这个作用域称为 闭包作用域。<br>【例子】</p><pre><code class="python">def funX(x):
+    def funY(y):
+        return x * y
+​
+    return funY
+​
+​
+i = funX(8)
+print(type(i))  # &lt;class &#39;function&#39;&gt;
+print(i(5))  # 40</code></pre><p>&lt;class ‘function’&gt;<br>40<br>【例子】闭包的返回值通常是函数。</p><pre><code class="python">def make_counter(init):
+    counter = [init]
+​
+    def inc(): counter[0] += 1
+​
+    def dec(): counter[0] -= 1
+​
+    def get(): return counter[0]
+​
+    def reset(): counter[0] = init
+​
+    return inc, dec, get, reset
+​
+​
+inc, dec, get, reset = make_counter(0)
+inc()
+inc()
+inc()
+print(get())  # 3
+dec()
+print(get())  # 2
+reset()
+print(get())  # 0</code></pre><p>3<br>2<br>0<br>【例子】 如果要修改闭包作用域中的变量则需要 nonlocal 关键字</p><pre><code class="python">def outer():
+    num = 10
+​
+    def inner():
+        nonlocal num  # nonlocal关键字声明
+        num = 100
+        print(num)
+​
+    inner()
+    print(num)
+​
+​
+outer()
+​
+# 100
+# 100
+</code></pre><p>100<br>100<br>递归</p><p>如果一个函数在内部调用自身本身，这个函数就是递归函数。<br>【例子】n! = 1 x 2 x 3 x … x n</p><pre><code class="python"># 利用循环
+n = 5
+for k in range(1, 5):
+    n = n * k
+print(n)  # 120
+​
+# 利用递归
+def factorial(n):
+    if n == 1:
+        return 1
+    return n * factorial(n - 1)
+​
+​
+print(factorial(5)) # 120</code></pre><p>120<br>120<br>【例子】斐波那契数列 f(n)=f(n-1)+f(n-2), f(0)=0 f(1)=1</p><pre><code class="python"># 利用循环
+i = 0
+j = 1
+lst = list([i, j])
+for k in range(2, 11):
+    k = i + j
+    lst.append(k)
+    i = j
+    j = k
+print(lst)  
+# [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
+​
+# 利用递归
+def recur_fibo(n):
+    if n &lt;= 1:
+        return n
+    return recur_fibo(n - 1) + recur_fibo(n - 2)
+​
+​
+lst = list()
+for k in range(11):
+    lst.append(recur_fibo(k))
+print(lst)  
+# [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55]</code></pre><p>[0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55]<br>[0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55]<br>【例子】设置递归的层数，Python默认递归层数为 100</p><pre><code class="python">import sys
+​
+sys.setrecursionlimit(1000)</code></pre><p>Lambda 表达式<br>匿名函数的定义<br>在 Python 里有两类函数：</p><p>第一类：用 def 关键词定义的正规函数<br>第二类：用 lambda 关键词定义的匿名函数<br>Python 使用 lambda 关键词来创建匿名函数，而非def关键词，它没有函数名，其语法结构如下：</p><p>lambda argument_list: expression</p><p>lambda - 定义匿名函数的关键词。<br>argument_list - 函数参数，它们可以是位置参数、默认参数、关键字参数，和正规函数里的参数类型一样。<br>:- 冒号，在函数参数和表达式中间要加个冒号。<br>expression - 只是一个表达式，输入函数参数，输出一些值。<br>注意：</p><p>expression 中没有 return 语句，因为 lambda 不需要它来返回，表达式本身结果就是返回值。<br>匿名函数拥有自己的命名空间，且不能访问自己参数列表之外或全局命名空间里的参数。<br>【例子】</p><pre><code class="python">def sqr(x):
+    return x ** 2
+​
+​
+print(sqr)
+# &lt;function sqr at 0x000000BABD3A4400&gt;
+​
+y = [sqr(x) for x in range(10)]
+print(y)
+# [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+​
+lbd_sqr = lambda x: x ** 2
+print(lbd_sqr)
+# &lt;function &lt;lambda&gt; at 0x000000BABB6AC1E0&gt;
+​
+y = [lbd_sqr(x) for x in range(10)]
+print(y)
+# [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+​
+​
+sumary = lambda arg1, arg2: arg1 + arg2
+print(sumary(10, 20))  # 30
+​
+func = lambda *args: sum(args)
+print(func(1, 2, 3, 4, 5))  # 15</code></pre><p>&lt;function sqr at 0x00000220081D9E18&gt;<br>[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]<br>&lt;function<lambda>at 0x00000220081FF400&gt;<br>[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]<br>30<br>15<br>匿名函数的应用<br>函数式编程 是指代码中每一块都是不可变的，都由纯函数的形式组成。这里的纯函数，是指函数本身相互独立、互不影响，对于相同的输入，总会有相同的输出，没有任何副作用。</lambda></p><p>【例子】非函数式编程</p><pre><code class="python">def f(x):
+    for i in range(0, len(x)):
+        x[i] += 10
+    return x
+​
+​
+x = [1, 2, 3]
+f(x)
+print(x)
+
+# [11, 12, 13]</code></pre><p>[11, 12, 13]<br>【例子】函数式编程</p><pre><code class="python">def f(x):
+    y = []
+    for item in x:
+        y.append(item + 10)
+    return y
+​
+​
+x = [1, 2, 3]
+f(x)
+print(x)
+# [1, 2, 3]</code></pre><p>[1, 2, 3]<br>匿名函数 常常应用于函数式编程的高阶函数 (high-order function)中，主要有两种形式：</p><p>参数是函数 (filter, map)<br>返回值是函数 (closure)<br>如，在 filter和map函数中的应用：</p><p>filter(function, iterable) 过滤序列，过滤掉不符合条件的元素，返回一个迭代器对象，如果要转换为列表，可以使用 list() 来转换。<br>【例子】</p><pre><code class="python">odd = lambda x: x % 2 == 1
+templist = filter(odd, [1, 2, 3, 4, 5, 6, 7, 8, 9])
+print(list(templist))  # [1, 3, 5, 7, 9]</code></pre><p>[1, 3, 5, 7, 9]<br>map(function, *iterables) 根据提供的函数对指定序列做映射。<br>【例子】</p><pre><code class="python">m1 = map(lambda x: x ** 2, [1, 2, 3, 4, 5])
+print(list(m1))  
+# [1, 4, 9, 16, 25]
+​
+m2 = map(lambda x, y: x + y, [1, 3, 5, 7, 9], [2, 4, 6, 8, 10])
+print(list(m2))  
+# [3, 7, 11, 15, 19]</code></pre><p>[1, 4, 9, 16, 25]<br>[3, 7, 11, 15, 19]<br>除了 Python 这些内置函数，我们也可以自己定义高阶函数。</p><p>【例子】</p><pre><code class="python">def apply_to_list(fun, some_list):
+    return fun(some_list)
+​
+lst = [1, 2, 3, 4, 5]
+print(apply_to_list(sum, lst))
+# 15
+​
+print(apply_to_list(len, lst))
+# 5
+​
+print(apply_to_list(lambda x: sum(x) / len(x), lst))
+# 3.0</code></pre><p>15<br>5<br>3.0<br>类与对象<br>对象 = 属性 + 方法<br>对象是类的实例。换句话说，类主要定义对象的结构，然后我们以类为模板创建对象。类不但包含方法定义，而且还包含所有实例共享的数据。</p><p>封装：信息隐蔽技术<br>我们可以使用关键字 class 定义 Python 类，关键字后面紧跟类的名称、分号和类的实现。</p><p>【例子】</p><pre><code class="python">class Turtle:  # Python中的类名约定以大写字母开头
+    &quot;&quot;&quot;关于类的一个简单例子&quot;&quot;&quot;
+    # 属性
+    color = &#39;green&#39;
+    weight = 10
+    legs = 4
+    shell = True
+    mouth = &#39;大嘴&#39;
+​
+    # 方法
+    def climb(self):
+        print(&#39;我正在很努力的向前爬...&#39;)
+​
+    def run(self):
+        print(&#39;我正在飞快的向前跑...&#39;)
+​
+    def bite(self):
+        print(&#39;咬死你咬死你!!&#39;)
+​
+    def eat(self):
+        print(&#39;有得吃，真满足...&#39;)
+​
+    def sleep(self):
+        print(&#39;困了，睡了，晚安，zzz&#39;)
+​
+​
+tt = Turtle()
+print(tt)
+# &lt;__main__.Turtle object at 0x0000007C32D67F98&gt;
+​
+print(type(tt))
+# &lt;class &#39;__main__.Turtle&#39;&gt;
+​
+print(tt.__class__)
+# &lt;class &#39;__main__.Turtle&#39;&gt;
+​
+print(tt.__class__.__name__)
+# Turtle
+​
+tt.climb()
+# 我正在很努力的向前爬...
+​
+tt.run()
+# 我正在飞快的向前跑...
+​
+tt.bite()
+# 咬死你咬死你!!
+​
+# Python类也是对象。它们是type的实例
+print(type(Turtle))
+# &lt;class &#39;type&#39;&gt;</code></pre><p>&lt;__main__.Turtle object at 0x000002200820E898&gt;<br>&lt;class ‘__main__.Turtle’&gt;<br>&lt;class ‘__main__.Turtle’&gt;<br>Turtle<br>我正在很努力的向前爬…<br>我正在飞快的向前跑…<br>咬死你咬死你!!<br>&lt;class ‘type’&gt;<br>继承：子类自动共享父类之间数据和方法的机制<br>【例子】</p><pre><code class="python">class MyList(list):
+    pass
+​
+​
+lst = MyList([1, 5, 2, 7, 8])
+lst.append(9)
+lst.sort()
+print(lst)
+​
+# [1, 2, 5, 7, 8, 9]</code></pre><p>[1, 2, 5, 7, 8, 9]<br>多态：不同对象对同一方法响应不同的行动<br>【例子】</p><pre><code class="python">class Animal:
+    def run(self):
+        raise AttributeError(&#39;子类必须实现这个方法&#39;)
+​
+​
+class People(Animal):
+    def run(self):
+        print(&#39;人正在走&#39;)
+​
+​
+class Pig(Animal):
+    def run(self):
+        print(&#39;pig is walking&#39;)
+​
+​
+class Dog(Animal):
+    def run(self):
+        print(&#39;dog is running&#39;)
+​
+​
+def func(animal):
+    animal.run()
+​
+​
+func(Pig())
+# pig is walking</code></pre><p>pig is walking<br>self 是什么？<br>Python 的 self 相当于 C++ 的 this 指针。</p><p>【例子】</p><pre><code class="python">class Test:
+    def prt(self):
+        print(self)
+        print(self.__class__)
+​
+​
+t = Test()
+t.prt()
+# &lt;__main__.Test object at 0x000000BC5A351208&gt;
+# &lt;class &#39;__main__.Test&#39;&gt;</code></pre><p>&lt;__main__.Test object at 0x000002200820EA20&gt;<br>&lt;class ‘__main__.Test’&gt;<br>类的方法与普通的函数只有一个特别的区别 —— 它们必须有一个额外的第一个参数名称（对应于该实例，即该对象本身），按照惯例它的名称是 self。在调用方法时，我们无需明确提供与参数 self 相对应的参数。</p><p>【例子】</p><pre><code class="python">class Ball:
+    def setName(self, name):
+        self.name = name
+​
+    def kick(self):
+        print(&quot;我叫%s,该死的，谁踢我...&quot; % self.name)
+​
+​
+a = Ball()
+a.setName(&quot;球A&quot;)
+b = Ball()
+b.setName(&quot;球B&quot;)
+c = Ball()
+c.setName(&quot;球C&quot;)
+a.kick()
+# 我叫球A,该死的，谁踢我...
+b.kick()
+# 我叫球B,该死的，谁踢我...</code></pre><p>我叫球A,该死的，谁踢我…<br>我叫球B,该死的，谁踢我…<br>Python 的魔法方法<br>据说，Python 的对象天生拥有一些神奇的方法，它们是面向对象的 Python 的一切…</p><p>它们是可以给你的类增加魔力的特殊方法…</p><p>如果你的对象实现了这些方法中的某一个，那么这个方法就会在特殊的情况下被 Python 所调用，而这一切都是自动发生的…</p><p>类有一个名为<strong>init</strong>(self[, param1, param2…])的魔法方法，该方法在类实例化时会自动调用。</p><p>【例子】</p><pre><code class="python">​
+class Ball:
+    def __init__(self, name):
+        self.name = name
+​
+    def kick(self):
+        print(&quot;我叫%s,该死的，谁踢我...&quot; % self.name)
+​
+​
+a = Ball(&quot;球A&quot;)
+b = Ball(&quot;球B&quot;)
+c = Ball(&quot;球C&quot;)
+a.kick()
+# 我叫球A,该死的，谁踢我...
+b.kick()
+# 我叫球B,该死的，谁踢我...</code></pre><p>我叫球A,该死的，谁踢我…<br>我叫球B,该死的，谁踢我…<br>公有和私有<br>在 Python 中定义私有变量只需要在变量名或函数名前加上“__”两个下划线，那么这个函数或变量就会为私有的了。</p><p>【例子】类的私有属性实例</p><pre><code class="python">class JustCounter:
+    __secretCount = 0  # 私有变量
+    publicCount = 0  # 公开变量
+​
+    def count(self):
+        self.__secretCount += 1
+        self.publicCount += 1
+        print(self.__secretCount)
+​
+​
+counter = JustCounter()
+counter.count()  # 1
+counter.count()  # 2
+print(counter.publicCount)  # 2
+​
+# Python的私有为伪私有
+print(counter._JustCounter__secretCount)  # 2 
+print(counter.__secretCount)  
+# AttributeError: &#39;JustCounter&#39; object has no attribute &#39;__secretCount&#39;</code></pre><p>1<br>2<br>2<br>2<br>【例子】类的私有方法实例</p><pre><code class="python">class Site:
+    def __init__(self, name, url):
+        self.name = name  # public
+        self.__url = url  # private
+​
+    def who(self):
+        print(&#39;name  : &#39;, self.name)
+        print(&#39;url : &#39;, self.__url)
+​
+    def __foo(self):  # 私有方法
+        print(&#39;这是私有方法&#39;)
+​
+    def foo(self):  # 公共方法
+        print(&#39;这是公共方法&#39;)
+        self.__foo()
+​
+​
+x = Site(&#39;老马的程序人生&#39;, &#39;https://blog.csdn.net/LSGO_MYP&#39;)
+x.who()
+# name  :  老马的程序人生
+# url :  https://blog.csdn.net/LSGO_MYP
+​
+x.foo()
+# 这是公共方法
+# 这是私有方法
+​
+x.__foo()
+# AttributeError: &#39;Site&#39; object has no attribute &#39;__foo&#39;</code></pre><p>name : 老马的程序人生<br>url : <span class="exturl" data-url="aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0xTR09fTVlQ">https://blog.csdn.net/LSGO_MYP</span><br>这是公共方法<br>这是私有方法<br>继承<br>Python 同样支持类的继承，派生类的定义如下所示：</p><p>class DerivedClassName(BaseClassName):<br>statement-1<br>.<br>.<br>.<br>statement-N</p><p>BaseClassName（基类名）必须与派生类定义在一个作用域内。除了类，还可以用表达式，基类定义在另一个模块中时这一点非常有用：</p><p>class DerivedClassName(modname.BaseClassName):<br>statement-1<br>.<br>.<br>.<br>statement-N</p><p>【例子】如果子类中定义与父类同名的方法或属性，则会自动覆盖父类对应的方法或属性。</p><pre><code class="python"># 类定义
+class people:
+    # 定义基本属性
+    name = &#39;&#39;
+    age = 0
+    # 定义私有属性,私有属性在类外部无法直接进行访问
+    __weight = 0
+​
+    # 定义构造方法
+    def __init__(self, n, a, w):
+        self.name = n
+        self.age = a
+        self.__weight = w
+​
+    def speak(self):
+        print(&quot;%s 说: 我 %d 岁。&quot; % (self.name, self.age))
+​
+​
+# 单继承示例
+class student(people):
+    grade = &#39;&#39;
+​
+    def __init__(self, n, a, w, g):
+        # 调用父类的构函
+        people.__init__(self, n, a, w)
+        self.grade = g
+​
+    # 覆写父类的方法
+    def speak(self):
+        print(&quot;%s 说: 我 %d 岁了，我在读 %d 年级&quot; % (self.name, self.age, self.grade))
+​
+​
+s = student(&#39;小马的程序人生&#39;, 10, 60, 3)
+s.speak()
+# 小马的程序人生 说: 我 10 岁了，我在读 3 年级</code></pre><p>小马的程序人生 说: 我 10 岁了，我在读 3 年级<br>注意：如果上面的程序去掉：people.<strong>init</strong>(self, n, a, w)，则输出：说: 我 0 岁了，我在读 3 年级，因为子类的构造方法把父类的构造方法覆盖了。</p><p>【例子】</p><pre><code class="python">import random
+​
+class Fish:
+    def __init__(self):
+        self.x = random.randint(0, 10)
+        self.y = random.randint(0, 10)
+​
+    def move(self):
+        self.x -= 1
+        print(&quot;我的位置&quot;, self.x, self.y)
+​
+​
+class GoldFish(Fish):  # 金鱼
+    pass
+​
+​
+class Carp(Fish):  # 鲤鱼
+    pass
+​
+​
+class Salmon(Fish):  # 三文鱼
+    pass
+​
+​
+class Shark(Fish):  # 鲨鱼
+    def __init__(self):
+        self.hungry = True
+​
+    def eat(self):
+        if self.hungry:
+            print(&quot;吃货的梦想就是天天有得吃！&quot;)
+            self.hungry = False
+        else:
+            print(&quot;太撑了，吃不下了！&quot;)
+            self.hungry = True
+​
+​
+g = GoldFish()
+g.move()  # 我的位置 9 4
+s = Shark()
+s.eat() # 吃货的梦想就是天天有得吃！
+s.move()  
+# AttributeError: &#39;Shark&#39; object has no attribute &#39;x&#39;</code></pre><p>我的位置 3 8<br>吃货的梦想就是天天有得吃！<br>解决该问题可用以下两种方式：</p><p>调用未绑定的父类方法Fish.<strong>init</strong>(self)<br>class Shark(Fish): # 鲨鱼<br>def <strong>init</strong>(self):<br>Fish.<strong>init</strong>(self)<br>self.hungry = True<br>​<br>def eat(self):<br>if self.hungry:<br>print(“吃货的梦想就是天天有得吃！”)<br>self.hungry = False<br>else:<br>print(“太撑了，吃不下了！”)<br>self.hungry = True<br>使用super函数super().<strong>init</strong>()<br>class Shark(Fish): # 鲨鱼<br>def <strong>init</strong>(self):<br>super().<strong>init</strong>()<br>self.hungry = True<br>​<br>def eat(self):<br>if self.hungry:<br>print(“吃货的梦想就是天天有得吃！”)<br>self.hungry = False<br>else:<br>print(“太撑了，吃不下了！”)<br>self.hungry = True<br>Python 虽然支持多继承的形式，但我们一般不使用多继承，因为容易引起混乱。</p><p>class DerivedClassName(Base1, Base2, Base3):<br>statement-1<br>.<br>.<br>.<br>statement-N</p><p>需要注意圆括号中父类的顺序，若是父类中有相同的方法名，而在子类使用时未指定，Python 从左至右搜索，即方法在子类中未找到时，从左到右查找父类中是否包含方法。</p><p>【例子】</p><pre><code class="python"># 类定义
+class People:
+    # 定义基本属性
+    name = &#39;&#39;
+    age = 0
+    # 定义私有属性,私有属性在类外部无法直接进行访问
+    __weight = 0
+​
+    # 定义构造方法
+    def __init__(self, n, a, w):
+        self.name = n
+        self.age = a
+        self.__weight = w
+​
+    def speak(self):
+        print(&quot;%s 说: 我 %d 岁。&quot; % (self.name, self.age))
+​
+​
+# 单继承示例
+class Student(People):
+    grade = &#39;&#39;
+​
+    def __init__(self, n, a, w, g):
+        # 调用父类的构函
+        People.__init__(self, n, a, w)
+        self.grade = g
+​
+    # 覆写父类的方法
+    def speak(self):
+        print(&quot;%s 说: 我 %d 岁了，我在读 %d 年级&quot; % (self.name, self.age, self.grade))
+​
+​
+# 另一个类，多重继承之前的准备
+class Speaker:
+    topic = &#39;&#39;
+    name = &#39;&#39;
+​
+    def __init__(self, n, t):
+        self.name = n
+        self.topic = t
+​
+    def speak(self):
+        print(&quot;我叫 %s，我是一个演说家，我演讲的主题是 %s&quot; % (self.name, self.topic))
+​
+​
+# 多重继承
+class Sample01(Speaker, Student):
+    a = &#39;&#39;
+​
+    def __init__(self, n, a, w, g, t):
+        Student.__init__(self, n, a, w, g)
+        Speaker.__init__(self, n, t)
+​
+# 方法名同，默认调用的是在括号中排前地父类的方法
+test = Sample01(&quot;Tim&quot;, 25, 80, 4, &quot;Python&quot;)
+test.speak()  
+# 我叫 Tim，我是一个演说家，我演讲的主题是 Python
+​
+class Sample02(Student, Speaker):
+    a = &#39;&#39;
+​
+    def __init__(self, n, a, w, g, t):
+        Student.__init__(self, n, a, w, g)
+        Speaker.__init__(self, n, t)
+​
+# 方法名同，默认调用的是在括号中排前地父类的方法
+test = Sample02(&quot;Tim&quot;, 25, 80, 4, &quot;Python&quot;)
+test.speak()  
+# Tim 说: 我 25 岁了，我在读 4 年级</code></pre><p>我叫 Tim，我是一个演说家，我演讲的主题是 Python<br>Tim 说: 我 25 岁了，我在读 4 年级<br>组合<br>【例子】</p><pre><code class="python">class Turtle:
+    def __init__(self, x):
+        self.num = x
+​
+​
+class Fish:
+    def __init__(self, x):
+        self.num = x
+​
+​
+class Pool:
+    def __init__(self, x, y):
+        self.turtle = Turtle(x)
+        self.fish = Fish(y)
+​
+    def print_num(self):
+        print(&quot;水池里面有乌龟%s只，小鱼%s条&quot; % (self.turtle.num, self.fish.num))
+​
+​
+p = Pool(2, 3)
+p.print_num()
+# 水池里面有乌龟2只，小鱼3条</code></pre><p>水池里面有乌龟2只，小鱼3条<br>类、类对象和实例对象<br>类对象和实例对象</p><p>类对象：创建一个类，其实也是一个对象也在内存开辟了一块空间，称为类对象，类对象只有一个。</p><p>class A(object):<br>pass</p><p>实例对象：就是通过实例化类创建的对象，称为实例对象，实例对象可以有多个。</p><p>【例子】</p><pre><code class="python">class A(object):
+    pass
+​
+# 实例化对象 a、b、c都属于实例对象
+。
+a = A()
+b = A()
+c = A()</code></pre><p>类属性：类里面方法外面定义的变量称为类属性。类属性所属于类对象并且多个实例对象之间共享同一个类属性，说白了就是类属性所有的通过该类实例化的对象都能共享。</p><p>【例子】</p><pre><code class="python">class A():
+    a = 0  #类属性
+    def __init__(self, xx):
+        A.a = xx  #使用类属性可以通过 （类名.类属性）调用。</code></pre><p>实例属性：实例属性和具体的某个实例对象有关系，并且一个实例对象和另外一个实例对象是不共享属性的，说白了实例属性只能在自己的对象里面使用，其他的对象不能直接使用，因为self是谁调用，它的值就属于该对象。</p><p>【例子】</p><pre><code class="python"># 创建类对象
+class Test(object):
+    class_attr = 100  # 类属性
+​
+    def __init__(self):
+        self.sl_attr = 100  # 实例属性
+​
+    def func(self):
+        print(&#39;类对象.类属性的值:&#39;, Test.class_attr)  # 调用类属性
+        print(&#39;self.类属性的值&#39;, self.class_attr)  # 相当于把类属性 变成实例属性
+        print(&#39;self.实例属性的值&#39;, self.sl_attr)  # 调用实例属性
+​
+​
+a = Test()
+a.func()
+​
+# 类对象.类属性的值: 100
+# self.类属性的值 100
+# self.实例属性的值 100
+​
+b = Test()
+b.func()
+​
+# 类对象.类属性的值: 100
+# self.类属性的值 100
+# self.实例属性的值 100
+​
+a.class_attr = 200
+a.sl_attr = 200
+a.func()
+​
+# 类对象.类属性的值: 100
+# self.类属性的值 200
+# self.实例属性的值 200
+​
+b.func()
+​
+# 类对象.类属性的值: 100
+# self.类属性的值 100
+# self.实例属性的值 100
+​
+Test.class_attr = 300
+a.func()
+​
+# 类对象.类属性的值: 300
+# self.类属性的值 200
+# self.实例属性的值 200
+​
+b.func()
+# 类对象.类属性的值: 300
+# self.类属性的值 300
+# self.实例属性的值 100</code></pre><p>类对象.类属性的值: 100<br>self.类属性的值 100<br>self.实例属性的值 100<br>类对象.类属性的值: 100<br>self.类属性的值 100<br>self.实例属性的值 100<br>类对象.类属性的值: 100<br>self.类属性的值 200<br>self.实例属性的值 200<br>类对象.类属性的值: 100<br>self.类属性的值 100<br>self.实例属性的值 100<br>类对象.类属性的值: 300<br>self.类属性的值 200<br>self.实例属性的值 200<br>类对象.类属性的值: 300<br>self.类属性的值 300<br>self.实例属性的值 100<br>注意：属性与方法名相同，属性会覆盖方法。</p><p>【例子】</p><pre><code class="python">class A:
+    def x(self):
+        print(&#39;x_man&#39;)
+​
+​
+aa = A()
+aa.x()  # x_man
+aa.x = 1
+print(aa.x)  # 1
+aa.x()
+# TypeError: &#39;int&#39; object is not callable</code></pre><p>x_man<br>1<br>什么是绑定？<br>Python 严格要求方法需要有实例才能被调用，这种限制其实就是 Python 所谓的绑定概念。</p><p>Python 对象的数据属性通常存储在名为.__ dict__的字典中，我们可以直接访问<strong>dict__，或利用 Python 的内置函数vars()获取.</strong> dict__。</p><p>【例子】</p><pre><code class="python">class CC:
+    def setXY(self, x, y):
+        self.x = x
+        self.y = y
+​
+    def printXY(self):
+        print(self.x, self.y)
+​
+​
+dd = CC()
+print(dd.__dict__)
+# &#123;&#125;
+​
+print(vars(dd))
+# &#123;&#125;
+​
+print(CC.__dict__)
+# &#123;&#39;__module__&#39;: &#39;__main__&#39;, &#39;setXY&#39;: &lt;function CC.setXY at 0x000000C3473DA048&gt;, &#39;printXY&#39;: &lt;function CC.printXY at 0x000000C3473C4F28&gt;, &#39;__dict__&#39;: &lt;attribute &#39;__dict__&#39; of &#39;CC&#39; objects&gt;, &#39;__weakref__&#39;: &lt;attribute &#39;__weakref__&#39; of &#39;CC&#39; objects&gt;, &#39;__doc__&#39;: None&#125;
+​
+dd.setXY(4, 5)
+print(dd.__dict__)
+# &#123;&#39;x&#39;: 4, &#39;y&#39;: 5&#125;
+​
+print(vars(CC))
+# &#123;&#39;__module__&#39;: &#39;__main__&#39;, &#39;setXY&#39;: &lt;function CC.setXY at 0x000000632CA9B048&gt;, &#39;printXY&#39;: &lt;function CC.printXY at 0x000000632CA83048&gt;, &#39;__dict__&#39;: &lt;attribute &#39;__dict__&#39; of &#39;CC&#39; objects&gt;, &#39;__weakref__&#39;: &lt;attribute &#39;__weakref__&#39; of &#39;CC&#39; objects&gt;, &#39;__doc__&#39;: None&#125;
+​
+print(CC.__dict__)
+# &#123;&#39;__module__&#39;: &#39;__main__&#39;, &#39;setXY&#39;: &lt;function CC.setXY at 0x000000632CA9B048&gt;, &#39;printXY&#39;: &lt;function CC.printXY at 0x000000632CA83048&gt;, &#39;__dict__&#39;: &lt;attribute &#39;__dict__&#39; of &#39;CC&#39; objects&gt;, &#39;__weakref__&#39;: &lt;attribute &#39;__weakref__&#39; of &#39;CC&#39; objects&gt;, &#39;__doc__&#39;: None&#125;</code></pre><p>{}<br>{}<br>{‘<strong>module</strong>‘: ‘<strong>main</strong>‘, ‘setXY’: &lt;function CC.setXY at 0x000002200822BD08&gt;, ‘printXY’: &lt;function CC.printXY at 0x000002200822BF28&gt;, ‘<strong>dict</strong>‘: &lt;attribute ‘__dict__’ of ‘CC’ objects&gt;, ‘<strong>weakref</strong>‘: &lt;attribute ‘__weakref__’ of ‘CC’ objects&gt;, ‘<strong>doc</strong>‘: None}<br>{‘x’: 4, ‘y’: 5}<br>{‘<strong>module</strong>‘: ‘<strong>main</strong>‘, ‘setXY’: &lt;function CC.setXY at 0x000002200822BD08&gt;, ‘printXY’: &lt;function CC.printXY at 0x000002200822BF28&gt;, ‘<strong>dict</strong>‘: &lt;attribute ‘__dict__’ of ‘CC’ objects&gt;, ‘<strong>weakref</strong>‘: &lt;attribute ‘__weakref__’ of ‘CC’ objects&gt;, ‘<strong>doc</strong>‘: None}<br>{‘<strong>module</strong>‘: ‘<strong>main</strong>‘, ‘setXY’: &lt;function CC.setXY at 0x000002200822BD08&gt;, ‘printXY’: &lt;function CC.printXY at 0x000002200822BF28&gt;, ‘<strong>dict</strong>‘: &lt;attribute ‘__dict__’ of ‘CC’ objects&gt;, ‘<strong>weakref</strong>‘: &lt;attribute ‘__weakref__’ of ‘CC’ objects&gt;, ‘<strong>doc</strong>‘: None}<br>一些相关的内置函数（BIF）<br>issubclass(class, classinfo) 方法用于判断参数 class 是否是类型参数 classinfo 的子类。<br>一个类被认为是其自身的子类。<br>classinfo可以是类对象的元组，只要class是其中任何一个候选类的子类，则返回True。<br>【例子】</p><pre><code class="python">class A:
+    pass
+​
+​
+class B(A):
+    pass
+​
+​
+print(issubclass(B, A))  # True
+print(issubclass(B, B))  # True
+print(issubclass(A, B))  # False
+print(issubclass(B, object))  # True</code></pre><p>True<br>True<br>False<br>True<br>isinstance(object, classinfo) 方法用于判断一个对象是否是一个已知的类型，类似type()。<br>type()不会认为子类是一种父类类型，不考虑继承关系。<br>isinstance()会认为子类是一种父类类型，考虑继承关系。<br>如果第一个参数不是对象，则永远返回False。<br>如果第二个参数不是类或者由类对象组成的元组，会抛出一个TypeError异常。<br>【例子】</p><p>a = 2<br>print(isinstance(a, int)) # True<br>print(isinstance(a, str)) # False<br>print(isinstance(a, (str, int, list))) # True<br>​<br>​<br>class A:<br>pass<br>​<br>​<br>class B(A):<br>pass<br>​<br>​<br>print(isinstance(A(), A)) # True<br>print(type(A()) == A) # True<br>print(isinstance(B(), A)) # True<br>print(type(B()) == A) # False<br>True<br>False<br>True<br>True<br>True<br>True<br>False<br>hasattr(object, name)用于判断对象是否包含对应的属性。<br>【例子】</p><pre><code class="python">class Coordinate:
+    x = 10
+    y = -5
+    z = 0
+​
+​
+point1 = Coordinate()
+print(hasattr(point1, &#39;x&#39;))  # True
+print(hasattr(point1, &#39;y&#39;))  # True
+print(hasattr(point1, &#39;z&#39;))  # True
+print(hasattr(point1, &#39;no&#39;))  # False</code></pre><p>True<br>True<br>True<br>False<br>getattr(object, name[, default])用于返回一个对象属性值。<br>【例子】</p><pre><code class="python">class A(object):
+    bar = 1
+​
+​
+a = A()
+print(getattr(a, &#39;bar&#39;))  # 1
+print(getattr(a, &#39;bar2&#39;, 3))  # 3
+print(getattr(a, &#39;bar2&#39;))
+# AttributeError: &#39;A&#39; object has no attribute &#39;bar2&#39;</code></pre><p>1<br>3<br>【例子】这个例子很酷！</p><pre><code class="python">class A(object):
+    def set(self, a, b):
+        x = a
+        a = b
+        b = x
+        print(a, b)
+​
+​
+a = A()
+c = getattr(a, &#39;set&#39;)
+c(a=&#39;1&#39;, b=&#39;2&#39;)  # 2 1</code></pre><p>​<br>2 1<br>setattr(object, name, value)对应函数 getattr()，用于设置属性值，该属性不一定是存在的。<br>【例子】</p><pre><code class="python">class A(object):
+    bar = 1
+​
+​
+a = A()
+print(getattr(a, &#39;bar&#39;))  # 1
+setattr(a, &#39;bar&#39;, 5)
+print(a.bar)  # 5
+setattr(a, &quot;age&quot;, 28)
+print(a.age)  # 28</code></pre><p>1<br>5<br>28<br>delattr(object, name)用于删除属性。<br>【例子】</p><pre><code class="python">class Coordinate:
+    x = 10
+    y = -5
+    z = 0
+​
+​
+point1 = Coordinate()
+​
+print(&#39;x = &#39;, point1.x)  # x =  10
+print(&#39;y = &#39;, point1.y)  # y =  -5
+print(&#39;z = &#39;, point1.z)  # z =  0
+​
+delattr(Coordinate, &#39;z&#39;)
+​
+print(&#39;--删除 z 属性后--&#39;)  # --删除 z 属性后--
+print(&#39;x = &#39;, point1.x)  # x =  10
+print(&#39;y = &#39;, point1.y)  # y =  -5
+​
+# 触发错误
+print(&#39;z = &#39;, point1.z)
+# AttributeError: &#39;Coordinate&#39; object has no attribute &#39;z&#39;</code></pre><p>x = 10<br>y = -5<br>z = 0<br>–删除 z 属性后–<br>x = 10<br>y = -5<br>class property([fget[, fset[, fdel[, doc]]]])用于在新式类中返回属性值。<br>fget – 获取属性值的函数<br>fset – 设置属性值的函数<br>fdel – 删除属性值函数<br>doc – 属性描述信息<br>【例子】</p><pre><code class="python">class C(object):
+    def __init__(self):
+        self.__x = None
+​
+    def getx(self):
+        return self.__x
+​
+    def setx(self, value):
+        self.__x = value
+​
+    def delx(self):
+        del self.__x
+​
+    x = property(getx, setx, delx, &quot;I&#39;m the &#39;x&#39; property.&quot;)
+​
+​
+cc = C()
+cc.x = 2
+print(cc.x)  # 2
+​
+del cc.x
+print(cc.x)
+# AttributeError: &#39;C&#39; object has no attribute &#39;_C__x&#39;</code></pre><p>2<br>魔法方法<br>魔法方法总是被双下划线包围，例如__init__。</p><p>魔法方法是面向对象的 Python 的一切，如果你不知道魔法方法，说明你还没能意识到面向对象的 Python 的强大。</p><p>魔法方法的“魔力”体现在它们总能够在适当的时候被自动调用。</p><p>魔法方法的第一个参数应为cls（类方法） 或者self（实例方法）。</p><p>cls：代表一个类的名称<br>self：代表一个实例对象的名称<br>基本的魔法方法<br><strong>init</strong>(self[, …]) 构造器，当一个实例被创建的时候调用的初始化方法<br>【例子】</p><pre><code class="python">class Rectangle:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+​
+    def getPeri(self):
+        return (self.x + self.y) * 2
+​
+    def getArea(self):
+        return self.x * self.y
+​
+​
+rect = Rectangle(4, 5)
+print(rect.getPeri())  # 18
+print(rect.getArea())  # 20</code></pre><p>18<br>20<br><strong>new</strong>(cls[, …]) 在一个对象实例化的时候所调用的第一个方法，在调用__init__初始化前，先调用__new__。<br>__new__至少要有一个参数cls，代表要实例化的类，此参数在实例化时由 Python 解释器自动提供，后面的参数直接传递给__init__。<br>__new__对当前类进行了实例化，并将实例返回，传给__init__的self。但是，执行了__new__，并不一定会进入__init__，只有__new__返回了，当前类cls的实例，当前类的__init__才会进入。<br>【例子】</p><pre><code class="python">class A(object):
+    def __init__(self, value):
+        print(&quot;into A __init__&quot;)
+        self.value = value
+​
+    def __new__(cls, *args, **kwargs):
+        print(&quot;into A __new__&quot;)
+        print(cls)
+        return object.__new__(cls)
+​
+​
+class B(A):
+    def __init__(self, value):
+        print(&quot;into B __init__&quot;)
+        self.value = value
+​
+    def __new__(cls, *args, **kwargs):
+        print(&quot;into B __new__&quot;)
+        print(cls)
+        return super().__new__(cls, *args, **kwargs)
+​
+​
+b = B(10)
+​
+# 结果：
+# into B __new__
+# &lt;class &#39;__main__.B&#39;&gt;
+# into A __new__
+# &lt;class &#39;__main__.B&#39;&gt;
+# into B __init__
+​
+class A(object):
+    def __init__(self, value):
+        print(&quot;into A __init__&quot;)
+        self.value = value
+​
+    def __new__(cls, *args, **kwargs):
+        print(&quot;into A __new__&quot;)
+        print(cls)
+        return object.__new__(cls)
+​
+​
+class B(A):
+    def __init__(self, value):
+        print(&quot;into B __init__&quot;)
+        self.value = value
+​
+    def __new__(cls, *args, **kwargs):
+        print(&quot;into B __new__&quot;)
+        print(cls)
+        return super().__new__(A, *args, **kwargs)  # 改动了cls变为A
+​
+​
+b = B(10)
+​
+# 结果：
+# into B __new__
+# &lt;class &#39;__main__.B&#39;&gt;
+# into A __new__
+# &lt;class &#39;__main__.A&#39;&gt;</code></pre><p>into B <strong>new</strong><br>&lt;class ‘__main__.B’&gt;<br>into A <strong>new</strong><br>&lt;class ‘__main__.B’&gt;<br>into B <strong>init</strong><br>into B <strong>new</strong><br>&lt;class ‘__main__.B’&gt;<br>into A <strong>new</strong><br>&lt;class ‘__main__.A’&gt;<br>若__new__没有正确返回当前类cls的实例，那__init__是不会被调用的，即使是父类的实例也不行，将没有__init__被调用。<br>【例子】利用__new__实现单例模式。</p><pre><code class="python">class Earth:
+    pass
+​
+​
+a = Earth()
+print(id(a))  # 260728291456
+b = Earth()
+print(id(b))  # 260728291624
+​
+class Earth:
+    __instance = None  # 定义一个类属性做判断
+​
+    def __new__(cls):
+        if cls.__instance is None:
+            cls.__instance = object.__new__(cls)
+            return cls.__instance
+        else:
+            return cls.__instance
+​
+​
+a = Earth()
+print(id(a))  # 512320401648
+b = Earth()
+print(id(b))  # 512320401648</code></pre><p>2336598724336<br>2336598528464<br>2336598467752<br>2336598467752<br>__new__方法主要是当你继承一些不可变的 class 时（比如int, str, tuple）， 提供给你一个自定义这些类的实例化过程的途径。<br>【例子】</p><pre><code class="python">class CapStr(str):
+    def __new__(cls, string):
+        string = string.upper()
+        return str.__new__(cls, string)
+​
+​
+a = CapStr(&quot;i love lsgogroup&quot;)
+print(a)  # I LOVE LSGOGROUP</code></pre><p>I LOVE LSGOGROUP<br><strong>del</strong>(self) 析构器，当一个对象将要被系统回收之时调用的方法。<br>Python 采用自动引用计数（ARC）方式来回收对象所占用的空间，当程序中有一个变量引用该 Python 对象时，Python 会自动保证该对象引用计数为 1；当程序中有两个变量引用该 Python 对象时，Python 会自动保证该对象引用计数为 2，依此类推，如果一个对象的引用计数变成了 0，则说明程序中不再有变量引用该对象，表明程序不再需要该对象，因此 Python 就会回收该对象。</p><p>大部分时候，Python 的 ARC 都能准确、高效地回收系统中的每个对象。但如果系统中出现循环引用的情况，比如对象 a 持有一个实例变量引用对象 b，而对象 b 又持有一个实例变量引用对象 a，此时两个对象的引用计数都是 1，而实际上程序已经不再有变量引用它们，系统应该回收它们，此时 Python 的垃圾回收器就可能没那么快，要等专门的循环垃圾回收器（Cyclic Garbage Collector）来检测并回收这种引用循环。</p><p>【例子】</p><pre><code class="python">class C(object):
+    def __init__(self):
+        print(&#39;into C __init__&#39;)
+​
+    def __del__(self):
+        print(&#39;into C __del__&#39;)
+​
+​
+c1 = C()
+# into C __init__
+c2 = c1
+c3 = c2
+del c3
+del c2
+del c1
+# into C __del__</code></pre><p>into C <strong>init</strong><br>into C <strong>del</strong><br><strong>str</strong>(self):</p><p>当你打印一个对象的时候，触发<strong>str</strong><br>当你使用%s格式化的时候，触发<strong>str</strong><br>str强转数据类型的时候，触发<strong>str</strong><br><strong>repr</strong>(self)：</p><p>repr是str的备胎<br>有<strong>str__的时候执行__str</strong>,没有实现<strong>str__的时候，执行__repr</strong><br>repr(obj)内置函数对应的结果是<strong>repr__的返回值<br>当你使用%r格式化的时候 触发__repr</strong><br>【例子】</p><p>class Cat:<br>“””定义一个猫类”””<br>​<br>def <strong>init</strong>(self, new_name, new_age):<br>“””在创建完对象之后 会自动调用, 它完成对象的初始化的功能”””<br>self.name = new_name<br>self.age = new_age<br>​<br>def <strong>str</strong>(self):<br>“””返回一个对象的描述信息”””<br>return “名字是:%s , 年龄是:%d” % (self.name, self.age)</p><pre><code>def __repr__(self):
+    &quot;&quot;&quot;返回一个对象的描述信息&quot;&quot;&quot;
+    return &quot;Cat:(%s,%d)&quot; % (self.name, self.age)</code></pre><p>​<br>def eat(self):<br>print(“%s在吃鱼….” % self.name)<br>​<br>def drink(self):<br>print(“%s在喝可乐…” % self.name)<br>​<br>def introduce(self):<br>print(“名字是:%s, 年龄是:%d” % (self.name, self.age))<br>​<br>​</p><h1 id="创建了一个对象"><a href="#创建了一个对象" class="headerlink" title="创建了一个对象"></a>创建了一个对象</h1><p>tom = Cat(“汤姆”, 30)<br>print(tom) # 名字是:汤姆 , 年龄是:30<br>print(str(tom)) # 名字是:汤姆 , 年龄是:30<br>print(repr(tom)) # Cat:(汤姆,30)<br>tom.eat() # 汤姆在吃鱼….<br>tom.introduce() # 名字是:汤姆, 年龄是:30<br>名字是:汤姆 , 年龄是:30<br>名字是:汤姆 , 年龄是:30<br>Cat:(汤姆,30)<br>汤姆在吃鱼….<br>名字是:汤姆, 年龄是:30<br><strong>str</strong>(self) 的返回结果可读性强。也就是说，<strong>str</strong> 的意义是得到便于人们阅读的信息，就像下面的 ‘2019-10-11’ 一样。</p><p><strong>repr</strong>(self) 的返回结果应更准确。怎么说，<strong>repr</strong> 存在的目的在于调试，便于开发者使用。</p><p>【例子】</p><pre><code class="python">import datetime
+​
+today = datetime.date.today()
+print(str(today))  # 2019-10-11
+print(repr(today))  # datetime.date(2019, 10, 11)
+print(&#39;%s&#39; %today)  # 2019-10-11
+print(&#39;%r&#39; %today)  # datetime.date(2019, 10, 11)</code></pre><p>2020-08-01<br>datetime.date(2020, 8, 1)<br>2020-08-01<br>datetime.date(2020, 8, 1)<br>算术运算符<br>类型工厂函数，指的是“不通过类而是通过函数来创建对象”。</p><p>【例子】</p><pre><code class="python">class C:
+    pass
+​
+​
+print(type(len))  # &lt;class &#39;builtin_function_or_method&#39;&gt;
+print(type(dir))  # &lt;class &#39;builtin_function_or_method&#39;&gt;
+print(type(int))  # &lt;class &#39;type&#39;&gt;
+print(type(list))  # &lt;class &#39;type&#39;&gt;
+print(type(tuple))  # &lt;class &#39;type&#39;&gt;
+print(type(C))  # &lt;class &#39;type&#39;&gt;
+print(int(&#39;123&#39;))  # 123
+​
+# 这个例子中list工厂函数把一个元祖对象加工成了一个列表对象。
+print(list((1, 2, 3)))  # [1, 2, 3]</code></pre><p>&lt;class ‘builtin_function_or_method’&gt;<br>&lt;class ‘builtin_function_or_method’&gt;<br>&lt;class ‘type’&gt;<br>&lt;class ‘type’&gt;<br>&lt;class ‘type’&gt;<br>&lt;class ‘type’&gt;<br>123<br>[1, 2, 3]<br><strong>add</strong>(self, other)定义加法的行为：+<br><strong>sub</strong>(self, other)定义减法的行为：-<br>【例子】</p><pre><code class="python">class MyClass:
+​
+    def __init__(self, height, weight):
+        self.height = height
+        self.weight = weight
+​
+    # 两个对象的长相加，宽不变.返回一个新的类
+    def __add__(self, others):
+        return MyClass(self.height + others.height, self.weight + others.weight)
+​
+    # 两个对象的宽相减，长不变.返回一个新的类
+    def __sub__(self, others):
+        return MyClass(self.height - others.height, self.weight - others.weight)
+​
+    # 说一下自己的参数
+    def intro(self):
+        print(&quot;高为&quot;, self.height, &quot; 重为&quot;, self.weight)
+​
+​
+def main():
+    a = MyClass(height=10, weight=5)
+    a.intro()
+​
+    b = MyClass(height=20, weight=10)
+    b.intro()
+​
+    c = b - a
+    c.intro()
+​
+    d = a + b
+    d.intro()
+​
+​
+if __name__ == &#39;__main__&#39;:
+    main()
+​
+# 高为 10  重为 5
+# 高为 20  重为 10
+# 高为 10  重为 5
+# 高为 30  重为 15</code></pre><p>高为 10 重为 5<br>高为 20 重为 10<br>高为 10 重为 5<br>高为 30 重为 15<br><strong>mul</strong>(self, other)定义乘法的行为：*<br><strong>truediv</strong>(self, other)定义真除法的行为：/<br><strong>floordiv</strong>(self, other)定义整数除法的行为：//<br><strong>mod</strong>(self, other) 定义取模算法的行为：%<br><strong>divmod</strong>(self, other)定义当被 divmod() 调用时的行为<br>divmod(a, b)把除数和余数运算结果结合起来，返回一个包含商和余数的元组(a // b, a % b)。<br>【例子】</p><pre><code class="python">print(divmod(7, 2))  # (3, 1)
+print(divmod(8, 2))  # (4, 0)</code></pre><p>(3, 1)<br>(4, 0)<br><strong>pow</strong>(self, other[, module])定义当被 power() 调用或 ** 运算时的行为<br><strong>lshift</strong>(self, other)定义按位左移位的行为：&lt;&lt;<br>__rshift__(self, other)定义按位右移位的行为：&gt;&gt;<br><strong>and</strong>(self, other)定义按位与操作的行为：&amp;<br><strong>xor</strong>(self, other)定义按位异或操作的行为：^<br><strong>or</strong>(self, other)定义按位或操作的行为：|<br>反算术运算符<br>反运算魔方方法，与算术运算符保持一一对应，不同之处就是反运算的魔法方法多了一个“r”。当文件左操作不支持相应的操作时被调用。</p><p><strong>radd</strong>(self, other)定义加法的行为：+<br><strong>rsub</strong>(self, other)定义减法的行为：-<br><strong>rmul</strong>(self, other)定义乘法的行为：*<br><strong>rtruediv</strong>(self, other)定义真除法的行为：/<br><strong>rfloordiv</strong>(self, other)定义整数除法的行为：//<br><strong>rmod</strong>(self, other) 定义取模算法的行为：%<br><strong>rdivmod</strong>(self, other)定义当被 divmod() 调用时的行为<br><strong>rpow</strong>(self, other[, module])定义当被 power() 调用或 ** 运算时的行为<br><strong>rlshift</strong>(self, other)定义按位左移位的行为：&lt;&lt;<br>__rrshift__(self, other)定义按位右移位的行为：&gt;&gt;<br><strong>rand</strong>(self, other)定义按位与操作的行为：&amp;<br><strong>rxor</strong>(self, other)定义按位异或操作的行为：^<br><strong>ror</strong>(self, other)定义按位或操作的行为：|<br>a + b</p><p>这里加数是a，被加数是b，因此是a主动，反运算就是如果a对象的<strong>add</strong>()方法没有实现或者不支持相应的操作，那么 Python 就会调用b的<strong>radd</strong>()方法。</p><p>【例子】</p><pre><code class="python">class Nint(int):
+    def __radd__(self, other):
+        return int.__sub__(other, self) # 注意 self 在后面
+​
+​
+a = Nint(5)
+b = Nint(3)
+print(a + b)  # 8
+print(1 + b)  # -2</code></pre><p>8<br>-2<br>增量赋值运算符<br><strong>iadd</strong>(self, other)定义赋值加法的行为：+=<br><strong>isub</strong>(self, other)定义赋值减法的行为：-=<br><strong>imul</strong>(self, other)定义赋值乘法的行为：*=<br><strong>itruediv</strong>(self, other)定义赋值真除法的行为：/=<br><strong>ifloordiv</strong>(self, other)定义赋值整数除法的行为：//=<br><strong>imod</strong>(self, other)定义赋值取模算法的行为：%=<br><strong>ipow</strong>(self, other[, modulo])定义赋值幂运算的行为：**=<br><strong>ilshift</strong>(self, other)定义赋值按位左移位的行为：&lt;&lt;=<br>__irshift__(self, other)定义赋值按位右移位的行为：&gt;&gt;=<br><strong>iand</strong>(self, other)定义赋值按位与操作的行为：&amp;=<br><strong>ixor</strong>(self, other)定义赋值按位异或操作的行为：^=<br><strong>ior</strong>(self, other)定义赋值按位或操作的行为：|=<br>一元运算符<br><strong>neg</strong>(self)定义正号的行为：+x<br><strong>pos</strong>(self)定义负号的行为：-x<br><strong>abs</strong>(self)定义当被abs()调用时的行为<br><strong>invert</strong>(self)定义按位求反的行为：~x<br>属性访问<br><strong>getattr</strong>(self, name): 定义当用户试图获取一个不存在的属性时的行为。<br><strong>getattribute</strong>(self, name)：定义当该类的属性被访问时的行为（先调用该方法，查看是否存在该属性，若不存在，接着去调用<strong>getattr__）。<br>__setattr</strong>(self, name, value)：定义当一个属性被设置时的行为。<br><strong>delattr</strong>(self, name)：定义当一个属性被删除时的行为。<br>【例子】</p><pre><code class="python">class C:
+    def __getattribute__(self, item):
+        print(&#39;__getattribute__&#39;)
+        return super().__getattribute__(item)
+​
+    def __getattr__(self, item):
+        print(&#39;__getattr__&#39;)
+​
+    def __setattr__(self, key, value):
+        print(&#39;__setattr__&#39;)
+        super().__setattr__(key, value)
+​
+    def __delattr__(self, item):
+        print(&#39;__delattr__&#39;)
+        super().__delattr__(item)
+​
+​
+c = C()
+c.x
+# __getattribute__
+# __getattr__
+​
+c.x = 1
+# __setattr__
+​
+del c.x
+# __delattr__</code></pre><p><strong>getattribute</strong><br><strong>getattr</strong><br><strong>setattr</strong><br><strong>delattr</strong><br>描述符<br>描述符就是将某种特殊类型的类的实例指派给另一个类的属性。</p><p><strong>get</strong>(self, instance, owner)用于访问属性，它返回属性的值。<br><strong>set</strong>(self, instance, value)将在属性分配操作中调用，不返回任何内容。<br><strong>del</strong>(self, instance)控制删除操作，不返回任何内容。<br>【例子】</p><pre><code class="python">class MyDecriptor:
+    def __get__(self, instance, owner):
+        print(&#39;__get__&#39;, self, instance, owner)
+​
+    def __set__(self, instance, value):
+        print(&#39;__set__&#39;, self, instance, value)
+​
+    def __delete__(self, instance):
+        print(&#39;__delete__&#39;, self, instance)
+​
+​
+class Test:
+    x = MyDecriptor()
+​
+​
+t = Test()
+t.x
+# __get__ &lt;__main__.MyDecriptor object at 0x000000CEAAEB6B00&gt; &lt;__main__.Test object at 0x000000CEABDC0898&gt; &lt;class &#39;__main__.Test&#39;&gt;
+​
+t.x = &#39;x-man&#39;
+# __set__ &lt;__main__.MyDecriptor object at 0x00000023687C6B00&gt; &lt;__main__.Test object at 0x00000023696B0940&gt; x-man
+​
+del t.x
+# __delete__ &lt;__main__.MyDecriptor object at 0x000000EC9B160A90&gt; &lt;__main__.Test object at 0x000000EC9B160B38&gt;</code></pre><p><strong>get</strong> &lt;__main__.MyDecriptor object at 0x0000022008242668&gt; &lt;__main__.Test object at 0x00000220082427B8&gt; &lt;class ‘__main__.Test’&gt;<br><strong>set</strong> &lt;__main__.MyDecriptor object at 0x0000022008242668&gt; &lt;__main__.Test object at 0x00000220082427B8&gt; x-man<br><strong>delete</strong> &lt;__main__.MyDecriptor object at 0x0000022008242668&gt; &lt;__main__.Test object at 0x00000220082427B8&gt;<br>定制序列<br>协议（Protocols）与其它编程语言中的接口很相似，它规定你哪些方法必须要定义。然而，在 Python 中的协议就显得不那么正式。事实上，在 Python 中，协议更像是一种指南。</p><p>容器类型的协议</p><p>如果说你希望定制的容器是不可变的话，你只需要定义<strong>len</strong>()和<strong>getitem</strong>()方法。<br>如果你希望定制的容器是可变的话，除了<strong>len</strong>()和<strong>getitem</strong>()方法，你还需要定义<strong>setitem</strong>()和<strong>delitem</strong>()两个方法。<br>【例子】编写一个不可改变的自定义列表，要求记录列表中每个元素被访问的次数。</p><pre><code class="python">class CountList:
+    def __init__(self, *args):
+        self.values = [x for x in args]
+        self.count = &#123;&#125;.fromkeys(range(len(self.values)), 0)
+​
+    def __len__(self):
+        return len(self.values)
+​
+    def __getitem__(self, item):
+        self.count[item] += 1
+        return self.values[item]
+​
+​
+c1 = CountList(1, 3, 5, 7, 9)
+c2 = CountList(2, 4, 6, 8, 10)
+print(c1[1])  # 3
+print(c2[2])  # 6
+print(c1[1] + c2[1])  # 7
+​
+print(c1.count)
+# &#123;0: 0, 1: 2, 2: 0, 3: 0, 4: 0&#125;
+​
+print(c2.count)
+# &#123;0: 0, 1: 1, 2: 1, 3: 0, 4: 0&#125;</code></pre><p>3<br>6<br>7<br>{0: 0, 1: 2, 2: 0, 3: 0, 4: 0}<br>{0: 0, 1: 1, 2: 1, 3: 0, 4: 0}<br><strong>len</strong>(self)定义当被len()调用时的行为（返回容器中元素的个数）。<br><strong>getitem</strong>(self, key)定义获取容器中元素的行为，相当于self[key]。<br><strong>setitem</strong>(self, key, value)定义设置容器中指定元素的行为，相当于self[key] = value。<br><strong>delitem</strong>(self, key)定义删除容器中指定元素的行为，相当于del self[key]。<br>【例子】编写一个可改变的自定义列表，要求记录列表中每个元素被访问的次数。</p><pre><code class="python">class CountList:
+    def __init__(self, *args):
+        self.values = [x for x in args]
+        self.count = &#123;&#125;.fromkeys(range(len(self.values)), 0)
+​
+    def __len__(self):
+        return len(self.values)
+​
+    def __getitem__(self, item):
+        self.count[item] += 1
+        return self.values[item]
+​
+    def __setitem__(self, key, value):
+        self.values[key] = value
+​
+    def __delitem__(self, key):
+        del self.values[key]
+        for i in range(0, len(self.values)):
+            if i &gt;= key:
+                self.count[i] = self.count[i + 1]
+        self.count.pop(len(self.values))
+​
+​
+c1 = CountList(1, 3, 5, 7, 9)
+c2 = CountList(2, 4, 6, 8, 10)
+print(c1[1])  # 3
+print(c2[2])  # 6
+c2[2] = 12
+print(c1[1] + c2[2])  # 15
+print(c1.count)
+# &#123;0: 0, 1: 2, 2: 0, 3: 0, 4: 0&#125;
+print(c2.count)
+# &#123;0: 0, 1: 0, 2: 2, 3: 0, 4: 0&#125;
+del c1[1]
+print(c1.count)
+# &#123;0: 0, 1: 0, 2: 0, 3: 0&#125;</code></pre><p>3<br>6<br>15<br>{0: 0, 1: 2, 2: 0, 3: 0, 4: 0}<br>{0: 0, 1: 0, 2: 2, 3: 0, 4: 0}<br>{0: 0, 1: 0, 2: 0, 3: 0}<br>迭代器<br>迭代是 Python 最强大的功能之一，是访问集合元素的一种方式。<br>迭代器是一个可以记住遍历的位置的对象。<br>迭代器对象从集合的第一个元素开始访问，直到所有的元素被访问完结束。<br>迭代器只能往前不会后退。<br>字符串，列表或元组对象都可用于创建迭代器：<br>【例子】</p><pre><code class="python">string = &#39;lsgogroup&#39;
+for c in string:
+    print(c)
+​
+&#39;&#39;&#39;
+l
+s
+g
+o
+g
+r
+o
+u
+p
+&#39;&#39;&#39;
+​
+for c in iter(string):
+    print(c)</code></pre><p>l<br>s<br>g<br>o<br>g<br>r<br>o<br>u<br>p<br>l<br>s<br>g<br>o<br>g<br>r<br>o<br>u<br>p<br>【例子】</p><pre><code class="python">links = &#123;&#39;B&#39;: &#39;百度&#39;, &#39;A&#39;: &#39;阿里&#39;, &#39;T&#39;: &#39;腾讯&#39;&#125;
+for each in links:
+    print(&#39;%s -&gt; %s&#39; % (each, links[each]))
+
+&#39;&#39;&#39;
+B -&gt; 百度
+A -&gt; 阿里
+T -&gt; 腾讯
+&#39;&#39;&#39;
+​
+for each in iter(links):
+    print(&#39;%s -&gt; %s&#39; % (each, links[each]))</code></pre><p>B -&gt; 百度<br>A -&gt; 阿里<br>T -&gt; 腾讯<br>B -&gt; 百度<br>A -&gt; 阿里<br>T -&gt; 腾讯<br>迭代器有两个基本的方法：iter() 和 next()。<br>iter(object) 函数用来生成迭代器。<br>next(iterator[, default]) 返回迭代器的下一个项目。<br>iterator – 可迭代对象<br>default – 可选，用于设置在没有下一个元素时返回该默认值，如果不设置，又没有下一个元素则会触发 StopIteration 异常。<br>【例子】</p><pre><code class="python">links = &#123;&#39;B&#39;: &#39;百度&#39;, &#39;A&#39;: &#39;阿里&#39;, &#39;T&#39;: &#39;腾讯&#39;&#125;
+​
+it = iter(links)
+while True:
+    try:
+        each = next(it)
+    except StopIteration:
+        break
+    print(each)
+​
+# B
+# A
+# T
+​
+it = iter(links)
+print(next(it))  # B
+print(next(it))  # A
+print(next(it))  # T
+print(next(it))  # StopIteration</code></pre><p>B<br>A<br>T<br>B<br>A<br>T</p><hr><p>StopIteration Traceback (most recent call last)<br><ipython-input-2-682f811edce7>in<module>()<br>17 print(next(it)) # A<br>18 print(next(it)) # T<br>—&gt; 19 print(next(it)) # StopIteration</module></ipython-input-2-682f811edce7></p><p>StopIteration:<br>把一个类作为一个迭代器使用需要在类中实现两个魔法方法 <strong>iter</strong>() 与 <strong>next</strong>() 。</p><p><strong>iter</strong>(self)定义当迭代容器中的元素的行为，返回一个特殊的迭代器对象， 这个迭代器对象实现了 <strong>next</strong>() 方法并通过 StopIteration 异常标识迭代的完成。<br><strong>next</strong>() 返回下一个迭代器对象。<br>StopIteration 异常用于标识迭代的完成，防止出现无限循环的情况，在 <strong>next</strong>() 方法中我们可以设置在完成指定循环次数后触发 StopIteration 异常来结束迭代。<br>【例子】</p><pre><code class="python">class Fibs:
+    def __init__(self, n=10):
+        self.a = 0
+        self.b = 1
+        self.n = n
+​
+    def __iter__(self):
+        return self
+​
+    def __next__(self):
+        self.a, self.b = self.b, self.a + self.b
+        if self.a &gt; self.n:
+            raise StopIteration
+        return self.a
+​
+​
+fibs = Fibs(100)
+for each in fibs:
+    print(each, end=&#39; &#39;)
+​
+# 1 1 2 3 5 8 13 21 34 55 89</code></pre><p>1 1 2 3 5 8 13 21 34 55 89<br>4.10 生成器</p><p>在 Python 中，使用了 yield 的函数被称为生成器（generator）。<br>跟普通函数不同的是，生成器是一个返回迭代器的函数，只能用于迭代操作，更简单点理解生成器就是一个迭代器。<br>在调用生成器运行的过程中，每次遇到 yield 时函数会暂停并保存当前所有的运行信息，返回 yield 的值, 并在下一次执行 next() 方法时从当前位置继续运行。<br>调用一个生成器函数，返回的是一个迭代器对象。<br>【例子】</p><pre><code class="python">def myGen():
+    print(&#39;生成器执行！&#39;)
+    yield 1
+    yield 2
+
+myG = myGen()
+for each in myG:
+    print(each)
+​
+&#39;&#39;&#39;
+生成器执行！
+1
+2
+&#39;&#39;&#39;
+​
+myG = myGen()
+print(next(myG))  
+# 生成器执行！
+# 1
+​
+print(next(myG))  # 2
+print(next(myG))  # StopIteration</code></pre><p>生成器执行！<br>1<br>2<br>生成器执行！<br>1<br>2</p><hr><p>StopIteration Traceback (most recent call last)<br><ipython-input-6-56bfa60ce8de>in<module>()<br>14<br>15 print(next(myG)) # 2<br>—&gt; 16 print(next(myG)) # StopIteration</module></ipython-input-6-56bfa60ce8de></p><p>StopIteration:<br>【例子】用生成器实现斐波那契数列。</p><pre><code class="python">def libs(n):
+    a = 0
+    b = 1
+    while True:
+        a, b = b, a + b
+        if a &gt; n:
+            return
+        yield a
+​
+​
+for each in libs(100):
+    print(each, end=&#39; &#39;)
+​
+# 1 1 2 3 5 8 13 21 34 55 89</code></pre><p>1 1 2 3 5 8 13 21 34 55 89</p></div><footer><div class="meta"><span class="item"><span class="icon"><i class="ic i-calendar-check"></i> </span><span class="text">更新于</span> <time title="修改时间：2021-02-16 22:27:56" itemprop="dateModified" datetime="2021-02-16T22:27:56+08:00">2021-02-16</time> </span><span id="2021/01/29/python-3-day/" class="item leancloud_visitors" data-flag-title="python_3_day" title="阅读次数"><span class="icon"><i class="ic i-eye"></i> </span><span class="text">阅读次数</span> <span class="leancloud-visitors-count"></span> <span class="text">次</span></span></div><div class="reward"><button><i class="ic i-heartbeat"></i> 赞赏</button><p>请我喝[茶]~(￣▽￣)~*</p><div id="qr"><div><img data-src="/images/wechatpay.jpg" alt="John Doe 微信支付"><p>微信支付</p></div><div><img data-src="/images/alipay.jpg" alt="John Doe 支付宝"><p>支付宝</p></div></div></div><div id="copyright"><ul><li class="author"><strong>本文博主： </strong>John Doe <i class="ic i-at"><em>@</em></i>Alan</li><li class="link"><strong>本文链接：</strong> <a href="http://47.97.229.110/2021/01/29/python-3-day/" title="python_3_day">http://47.97.229.110/2021/01/29/python-3-day/</a></li><li class="license"><strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！</li></ul></div></footer></article></div><div class="post-nav"><div class="item left"><a href="/2021/01/26/hello-world/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclflwv2aj20zk0m84qp.jpg" title="Hello Hexo"><span class="type">上一篇</span> <span class="category"><i class="ic i-flag"></i> hexo</span><h3>Hello Hexo</h3></a></div><div class="item right"><a href="/2021/01/29/python-2-day/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicliierfjj20zk0m8npd.jpg" title="python_2_day"><span class="type">下一篇</span> <span class="category"><i class="ic i-flag"></i> python</span><h3>python_2_day</h3></a></div></div><div class="wrap" id="comments"></div></div><div id="sidebar"><div class="inner"><div class="panels"><div class="inner"><div class="contents panel pjax" data-title="文章目录"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BC%A0%E9%80%92%E8%BF%9B%E6%9D%A5%E7%9A%84%E8%80%81%E9%A9%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E4%BA%BA%E7%94%9F%E5%8F%AB%E5%81%9A%E5%AE%9E%E5%8F%82%EF%BC%8C%E5%9B%A0%E4%B8%BATa%E6%98%AF%E5%85%B7%E4%BD%93%E7%9A%84%E5%8F%82%E6%95%B0%E5%80%BC%EF%BC%81"><span class="toc-number">1.</span> <span class="toc-text">传递进来的老马的程序人生叫做实参，因为Ta是具体的参数值！</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%87%BD%E6%95%B0%E5%AE%9A%E4%B9%89%E8%BF%87%E7%A8%8B%E4%B8%ADname%E6%98%AF%E5%BD%A2%E5%8F%82"><span class="toc-number">2.</span> <span class="toc-text">函数定义过程中name是形参</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Help-on-function-MyFirstFunction-in-module-main"><span class="toc-number">3.</span> <span class="toc-text">Help on function MyFirstFunction in module main:</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#MyFirstFunction-name"><span class="toc-number">4.</span> <span class="toc-text">MyFirstFunction(name)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%87%BD%E6%95%B0%E5%AE%9A%E4%B9%89%E8%BF%87%E7%A8%8B%E4%B8%ADname%E6%98%AF%E5%BD%A2%E5%8F%82-1"><span class="toc-number">5.</span> <span class="toc-text">函数定义过程中name是形参</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#70"><span class="toc-number">6.</span> <span class="toc-text">70</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#60"><span class="toc-number">7.</span> <span class="toc-text">60</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#50"><span class="toc-number">8.</span> <span class="toc-text">50</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E4%BA%86%E4%B8%80%E4%B8%AA%E5%AF%B9%E8%B1%A1"><span class="toc-number">9.</span> <span class="toc-text">创建了一个对象</span></a></li></ol></div><div class="related panel pjax" data-title="系列文章"><ul><li class="active"><a href="/2021/01/29/python-3-day/" rel="bookmark" title="python_3_day">python_3_day</a></li><li><a href="/2021/01/29/python-2-day/" rel="bookmark" title="python_2_day">python_2_day</a></li><li><a href="/2021/01/29/python-1-day/" rel="bookmark" title="python_1_day">python_1_day</a></li></ul></div><div class="overview panel" data-title="站点概览"><div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person"><img class="image" itemprop="image" alt="John Doe" data-src="/images/avatar.jpg"><p class="name" itemprop="name">John Doe</p><div class="description" itemprop="description"></div></div><nav class="state"><div class="item posts"><a href="/archives/"><span class="count">13</span> <span class="name">文章</span></a></div><div class="item categories"><a href="/categories/"><span class="count">5</span> <span class="name">分类</span></a></div></nav><div class="social"><span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL0FsYW5vc3k=" title="https:&#x2F;&#x2F;github.com&#x2F;Alanosy"><i class="ic i-github"></i></span> <span class="exturl item zhihu" data-url="aHR0cDovL3d3dy56aGlodS5jb20vcGVvcGxlL3dhbmctemhlbmctODEtNDQtOTM=" title="http:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;wang-zheng-81-44-93"><i class="ic i-zhihu"></i></span> <span class="exturl item email" data-url="bWFpbHRvOkFsYW5vc0BhbGl5dW4uY29t" title="mailto:Alanos@aliyun.com"><i class="ic i-envelope"></i></span> <span class="exturl item weibo" data-url="aHR0cHM6Ly93ZWliby5jb20vdS83NTMwMzcwODEx" title="https:&#x2F;&#x2F;weibo.com&#x2F;u&#x2F;7530370811"><i class="ic i-weibo"></i></span> <span class="exturl item about" data-url="aHR0cHM6Ly9hYm91dC5tZS95b3VybmFtZQ==" title="https:&#x2F;&#x2F;about.me&#x2F;yourname"><i class="ic i-address-card"></i></span></div><ul class="menu"><li class="item"><a href="/" rel="section"><i class="ic i-home"></i>首页</a></li><li class="item dropdown"><a href="javascript:void(0);"><i class="ic i-feather"></i>文章</a><ul class="submenu"><li class="item"><a href="/archives/" rel="section"><i class="ic i-list-alt"></i>归档</a></li><li class="item"><a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a></li><li class="item"><a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a></li></ul></li><li class="item"><a href="/friends/" rel="section"><i class="ic i-heart"></i>friends</a></li><li class="item"><a href="/links/" rel="section"><i class="ic i-magic"></i>links</a></li><li class="item"><a href="/about/" rel="section"><i class="ic i-user"></i>关于</a></li></ul></div></div></div><ul id="quick"><li class="prev pjax"><a href="/2021/01/26/hello-world/" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a></li><li class="up"><i class="ic i-arrow-up"></i></li><li class="down"><i class="ic i-arrow-down"></i></li><li class="next pjax"><a href="/2021/01/29/python-2-day/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a></li><li class="percent"></li></ul></div></div><div class="dimmer"></div></div></main><footer id="footer"><div class="inner"><div class="widgets"><div class="rpost pjax"><h2>随机文章</h2><ul><li class="item"><div class="breadcrumb"><a href="/categories/python/" title="分类于 python">python</a></div><span><a href="/2021/01/29/python-1-day/" title="python_1_day">python_1_day</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/hexo/" title="分类于 hexo">hexo</a></div><span><a href="/2021/01/26/%E7%89%B9%E6%AE%8A%E5%8A%9F%E8%83%BD/" title="特殊功能">特殊功能</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/python/" title="分类于 python">python</a></div><span><a href="/2021/01/29/python-2-day/" title="python_2_day">python_2_day</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2021/02/22/cheshi/" title="cheshi">cheshi</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/" title="分类于 人工智能">人工智能</a></div><span><a href="/2021/01/29/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0_2-day/" title="深度学习_2_day">深度学习_2_day</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/hexo/" title="分类于 hexo">hexo</a></div><span><a href="/2021/01/25/Linux%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" title="Linux搭建博客">Linux搭建博客</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/%E6%97%A5%E5%BF%97/" title="分类于 日志">日志</a></div><span><a href="/2021/01/26/2020-1-26/" title="2020-1-26">2020-1-26</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/%E6%97%A5%E5%B8%B8/" title="分类于 日常">日常</a></div><span><a href="/2021/02/18/%E5%8F%AA%E8%A6%81%E4%BD%A0%E9%9C%80%E8%A6%81%E6%88%91%EF%BC%8C%E6%88%91%E6%B0%B8%E8%BF%9C%E5%9C%A8%E4%BD%A0%E7%9C%8B%E7%9A%84%E5%88%B0%E7%9A%84%E5%9C%B0%E6%96%B9/" title="只要你需要我，我永远在你看的到的地方">只要你需要我，我永远在你看的到的地方</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/" title="分类于 人工智能">人工智能</a></div><span><a href="/2021/01/29/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0_1_day/" title="深度学习_1_day">深度学习_1_day</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2021/02/15/%E5%85%B3%E4%BA%8E/" title="关于">关于</a></span></li></ul></div><div><h2>最新评论</h2><ul class="leancloud-recent-comment"></ul></div></div><div class="status"><div class="copyright">&copy; 2010 – <span itemprop="copyrightYear">2021</span> <span class="with-love"><i class="ic i-sakura rotate"></i> </span><span class="author" itemprop="copyrightHolder">John Doe @ Yume Shoka</span></div><div class="count"><span class="post-meta-item-icon"><i class="ic i-chart-area"></i> </span><span title="站点总字数">143k 字</span> <span class="post-meta-divider">|</span> <span class="post-meta-item-icon"><i class="ic i-coffee"></i> </span><span title="站点阅读时长">2:10</span></div><div class="powered-by">基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span></div></div></div></footer></div><script data-config type="text/javascript">var LOCAL={path:"2021/01/29/python-3-day/",favicon:{show:"（●´3｀●）やれやれだぜ",hide:"(´Д｀)大変だ！"},search:{placeholder:"文章搜索",empty:"关于 「 ${query} 」，什么也没搜到",stats:"${time} ms 内找到 ${hits} 条结果"},valine:!0,fancybox:!0,copyright:'复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',ignores:[function(e){return e.includes("#")},function(e){return new RegExp(LOCAL.path+"$").test(e)}]}</script><script src="https://cdn.polyfill.io/v2/polyfill.js"></script><script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script><script src="/js/app.js?v=0.2.5"></script></body></html><!-- rebuild by hrmmi -->
